@@ -3,3 +3,4 @@ tmp/
 .ruff_cache
 .verify-helper
 __pycache__
+template/

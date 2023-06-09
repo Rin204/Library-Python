@@ -1,9 +1,9 @@
 ---
 title: UnionFind
-documentation_of: ././src/data_structure/UnionFind.py
+documentation_of: ././expansion/data_structure/UnionFind.py
 ---
 
-# UnionFind
+# 概要
 test
 
 ## 使い方
