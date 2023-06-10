@@ -11,7 +11,7 @@ ruff:
 oj: verify docs
 
 verify:
-	oj-verify run
+	oj-verify run ./src/*.test.py
 
 docs:
 	oj-verify docs
