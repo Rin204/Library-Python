@@ -28,8 +28,6 @@ def main(input_file, output_file):
         path = input_file.split("/")
         dfs(path)
 
-    pass
-
 
 if __name__ == "__main__":
     input_file = sys.argv[1]
