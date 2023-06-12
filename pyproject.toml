@@ -21,7 +21,8 @@ line-length = 99
 line-length = 99
 ignore = [
     "E501",
-    "E741"
+    "E741",
+    "E402"
 ]
 
 [build-system]

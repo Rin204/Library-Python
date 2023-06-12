@@ -1,5 +1,10 @@
 # verification-helper: PROBLEM https://yukicoder.me/problems/no/649
 
+from pathlib import Path
+import sys
+
+sys.path.append(str(Path(__file__).resolve().parent.parent.parent.parent))
+
 from src.data_structure.BIT import BIT
 
 Q, k = map(int, input().split())

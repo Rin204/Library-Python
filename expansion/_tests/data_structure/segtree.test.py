@@ -1,5 +1,10 @@
 # verification-helper: PROBLEM https://judge.yosupo.jp/problem/point_add_range_sum
 
+from pathlib import Path
+import sys
+
+sys.path.append(str(Path(__file__).resolve().parent.parent.parent.parent))
+
 
 class SegmentTree:
     def __init__(self, n, e, ope, init=None):
