@@ -1,5 +1,10 @@
 # verification-helper: PROBLEM https://judge.yosupo.jp/problem/unionfind
 
+from pathlib import Path
+import sys
+
+sys.path.append(str(Path(__file__).resolve().parent.parent.parent.parent))
+
 
 class UnionFind:
     def __init__(self, n):

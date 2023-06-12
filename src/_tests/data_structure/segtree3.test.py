@@ -1,5 +1,10 @@
 # verification-helper: PROBLEM https://judge.yosupo.jp/problem/point_set_range_composite
 
+from pathlib import Path
+import sys
+
+sys.path.append(str(Path(__file__).resolve().parent.parent.parent.parent))
+
 from src.data_structure.SegmentTreeBase_ import SegmentTreeBase_
 
 MOD = 998244353

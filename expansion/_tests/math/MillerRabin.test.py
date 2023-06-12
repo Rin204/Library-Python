@@ -1,5 +1,10 @@
 # verification-helper: PROBLEM https://judge.yosupo.jp/problem/primality_test
 
+from pathlib import Path
+import sys
+
+sys.path.append(str(Path(__file__).resolve().parent.parent.parent.parent))
+
 
 def MillerRabin(n):
     if n <= 1:
