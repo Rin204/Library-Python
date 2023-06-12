@@ -7,11 +7,11 @@ sys.path.append(str(Path(__file__).resolve().parent.parent.parent.parent))
 
 
 class SegmentTree:
-    def __init__(self, n, e, ope, init=None):
+    def __init__(self, n, ope, e, init=None):
         self.n = n
         self.n0 = 1 << (n - 1).bit_length()
-        self.e = e
         self.ope = ope
+        self.e = e
         self.data = [e] * (2 * self.n0)
         if init is not None:
             for i in range(n):
@@ -105,7 +105,7 @@ def ope(l, r):
 
 n, Q = map(int, input().split())
 A = list(map(int, input().split()))
-seg = SegmentTree(n, 0, ope, A)
+seg = SegmentTree(n, ope, 0, A)
 for _ in range(Q):
     t, p, x = map(int, input().split())
     if t == 0:

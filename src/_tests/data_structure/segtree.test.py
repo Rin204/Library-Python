@@ -14,7 +14,7 @@ def ope(l, r):
 
 n, Q = map(int, input().split())
 A = list(map(int, input().split()))
-seg = SegmentTree(n, 0, ope, A)
+seg = SegmentTree(n, ope, 0, A)
 for _ in range(Q):
     t, p, x = map(int, input().split())
     if t == 0:

@@ -1,9 +1,9 @@
 class SegmentTree:
-    def __init__(self, n, e, ope, init=None):
+    def __init__(self, n, ope, e, init=None):
         self.n = n
         self.n0 = 1 << (n - 1).bit_length()
-        self.e = e
         self.ope = ope
+        self.e = e
         self.data = [e] * (2 * self.n0)
         if init is not None:
             for i in range(n):

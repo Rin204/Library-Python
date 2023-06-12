@@ -12,11 +12,11 @@ from src.data_structure.SegmentTreeBase_ import SegmentTreeBase_
 
 
 class PointAddRangeSum(SegmentTreeBase_):
-    def e(self):
-        return 0
-
     def ope(self, l, r):
         return l + r
+
+    def e(self):
+        return 0
 
 
 Q, k = map(int, input().split())
@@ -38,10 +38,6 @@ X = [-1] * add + X
 if rev:
     X = X[::-1]
 dic = {x: i for i, x in enumerate(X)}
-
-
-def ope(l, r):
-    return l + r
 
 
 seg = PointAddRangeSum(len(X))

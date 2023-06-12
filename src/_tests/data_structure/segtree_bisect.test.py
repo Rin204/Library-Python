@@ -33,7 +33,7 @@ def ope(l, r):
     return l + r
 
 
-seg = SegmentTree(len(X), 0, ope)
+seg = SegmentTree(len(X), ope, 0)
 if not rev:
     for q in Query:
         if q == -1:

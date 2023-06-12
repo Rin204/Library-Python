@@ -11,9 +11,6 @@ MOD = 998244353
 
 
 class PointSetRangeComposite(SegmentTreeBase_):
-    def e(self):
-        return 1 << 30
-
     def ope(self, l, r):
         a = l >> 30
         b = l ^ (a << 30)
@@ -24,6 +21,9 @@ class PointSetRangeComposite(SegmentTreeBase_):
         f = (b * c + d) % MOD
 
         return (e << 30) | f
+
+    def e(self):
+        return 1 << 30
 
 
 n, Q = map(int, input().split())

@@ -1,8 +1,8 @@
 class SegmentTreeBase_:
-    def e(self):
+    def ope(self, l, r):
         return None
 
-    def ope(self, l, r):
+    def e(self):
         return None
 
     def __init__(self, n, init=None):
@@ -96,8 +96,8 @@ class SegmentTreeBase_:
 
 
 class PointAddRangeSum(SegmentTreeBase_):
-    def e(self):
-        return 0
-
     def ope(self, l, r):
         return l + r
+
+    def e(self):
+        return 0

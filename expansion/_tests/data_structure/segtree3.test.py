@@ -7,10 +7,10 @@ sys.path.append(str(Path(__file__).resolve().parent.parent.parent.parent))
 
 
 class SegmentTreeBase_:
-    def e(self):
+    def ope(self, l, r):
         return None
 
-    def ope(self, l, r):
+    def e(self):
         return None
 
     def __init__(self, n, init=None):
@@ -107,9 +107,6 @@ MOD = 998244353
 
 
 class PointSetRangeComposite(SegmentTreeBase_):
-    def e(self):
-        return 1 << 30
-
     def ope(self, l, r):
         a = l >> 30
         b = l ^ (a << 30)
@@ -120,6 +117,9 @@ class PointSetRangeComposite(SegmentTreeBase_):
         f = (b * c + d) % MOD
 
         return (e << 30) | f
+
+    def e(self):
+        return 1 << 30
 
 
 n, Q = map(int, input().split())
