@@ -1,4 +1,4 @@
-from data_structure.SegmentTreeBase_ import SegmentTreeBase_
+from src.data_structure.SegmentTreeBase_ import SegmentTreeBase_
 
 
 class PointAddRangeSum(SegmentTreeBase_):
