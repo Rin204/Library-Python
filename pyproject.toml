@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "python-library"
+version = "0.1.0"
+description = ""
+authors = ["rin204"]
+readme = "README.md"
+packages = [{include = "python_library"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+online-judge-verify-helper = "^5.6.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3.0"
+ruff = "^0.0.271"
+
+[tool.black]
+line-length = 99
+
+[tool.ruff]
+line-length = 99
+ignore = [
+    "E501",
+    "E741"
+]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

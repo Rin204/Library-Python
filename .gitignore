@@ -1,0 +1,5 @@
+.vscode/
+tmp/
+.ruff_cache
+.verify-helper
+__pycache__
