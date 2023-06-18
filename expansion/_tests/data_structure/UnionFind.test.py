@@ -37,6 +37,9 @@ class UnionFind:
         self.group_ -= 1
         return True
 
+    def size(self, x):
+        return -self.par[self.find(x)]
+
     def same(self, x, y):
         return self.find(x) == self.find(y)
 
