@@ -23,7 +23,7 @@ class SparseTableBase_:
             self.look[i] = self.look[i >> 1] + 1
 
     def prod(self, l, r):
-        assert l <= r
+        assert l < r
         d = r - l
         if d == 1:
             return self.table[l]
