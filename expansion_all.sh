@@ -1,10 +1,4 @@
-rsync -avz --include "*/" --exclude "*" ./src/ ./expansion/
-
-for file in `find ./src -name '*.py'`; do
-    echo $file
-    newfile=`echo ${file/src/expansion}`
-    pypy3 expansion.py $file $newfile
-done
+python3 expansion_all.py
 
 echo "finish copy"
 
