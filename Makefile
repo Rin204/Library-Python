@@ -14,7 +14,7 @@ verify-src:
 	oj-verify run src/_tests/*/*.test.py
 
 verify-exp:
-	oj-verify run exp/_tests/*/*.test.py
+	oj-verify run expansion/_tests/*/*.test.py
 
 verify: verify-src verify-exp
 
