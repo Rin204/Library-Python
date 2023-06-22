@@ -1,4 +1,4 @@
-.PHONY: all format black ruff verify docs exp
+.PHONY: all format black ruff verify docs exp verify-src verify-exp
 
 format: black ruff
 
@@ -12,12 +12,11 @@ oj: verify docs
 
 verify-src:
 	oj-verify run src/_tests/*/*.test.py
+
 verify-exp:
 	oj-verify run exp/_tests/*/*.test.py
 
-verify:
-	verify-src
-	verify-exp
+verify: verify-src verify-exp
 
 docs:
 	oj-verify docs
