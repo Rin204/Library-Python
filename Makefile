@@ -10,8 +10,14 @@ ruff:
 
 oj: verify docs
 
-verify:
+verify-src:
 	oj-verify run src/_tests/*/*.test.py
+verify-exp:
+	oj-verify run exp/_tests/*/*.test.py
+
+verify:
+	verify-src
+	verify-exp
 
 docs:
 	oj-verify docs

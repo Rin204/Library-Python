@@ -4,34 +4,37 @@ import glob
 import json
 
 
-def main(input_file, output_file):
-    with open(output_file, "w") as f:
-        se = set()
+def get_time_expfile(input_file):
+    write = []
+    se = set()
 
-        def dfs(path):
-            filename = "/".join(path)
-            if not os.path.exists(filename):
-                return False
-            if filename in se:
-                return
-            se.add(filename)
-            path.pop()
-            with open(filename, "r") as f2:
-                for row in f2:
-                    if row[:4] == "from":
-                        P = row.split()[1].split(".")
-                        P[-1] += ".py"
-                        if not dfs(P):
-                            f.write(row)
-                    else:
-                        f.write(row)
-            return True
+    def dfs(path):
+        filename = "/".join(path)
+        if not os.path.exists(filename):
+            return False
+        if filename in se:
+            return
+        se.add(filename)
+        path.pop()
+        with open(filename, "r") as f2:
+            for row in f2:
+                if row[:4] == "from":
+                    P = row.split()[1].split(".")
+                    P[-1] += ".py"
+                    if not dfs(P):
+                        write.append(row)
+                else:
+                    write.append(row)
+        return True
 
-        path = input_file.split("/")
-        dfs(path)
+    path = input_file.split("/")
+    dfs(path)
+
+    max_time = max(datetime.datetime.fromtimestamp(os.path.getmtime(file)) for file in se)
+    return max_time, "".join(write)
 
 
-if __name__ == "__main__":
+def main():
     json_path = "src/timestamps.json"
     timestamps = {}
     if os.path.exists(json_path):
@@ -43,14 +46,18 @@ if __name__ == "__main__":
             timestamps[path] = timestamp
     data = {}
     for file in glob.glob("src/**/*.py", recursive=True):
-        timestamp = os.path.getmtime(file)
-        modifiedtime = datetime.datetime.fromtimestamp(timestamp)
-        data[file] = modifiedtime.strftime("%Y-%m-%d %H:%M:%S")
+        time, write = get_time_expfile(file)
+        data[file] = time.strftime("%Y-%m-%d %H:%M:%S")
         if timestamps.get(file, None) == data[file]:
             continue
         output_file = file.replace("src", "expansion", 1)
-        main(file, output_file)
+        with open(output_file, "w") as f:
+            f.write(write)
         print(f"copy {file}")
 
     with open(json_path, "w") as fh:
         json.dump(data, fh, sort_keys=True, indent=0)
+
+
+if __name__ == "__main__":
+    main()
