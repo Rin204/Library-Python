@@ -23,3 +23,8 @@ def floor_sum(n, m, a, b):
         x_max = y_max * m - b
         ret += (n - (x_max + a - 1) // a) * y_max
         n, m, a, b = y_max, a, m, -x_max % a
+
+
+for _ in range(int(input())):
+    n, m, a, b = map(int, input().split())
+    print(floor_sum(n, m, a, b))

@@ -14,3 +14,8 @@ def ext_gcd(a, b):
     else:
         y, x, g = ext_gcd(b, a % b)
         return x, y - (a // b) * x, g
+
+
+a, b = map(int, input().split())
+x, y, g = ext_gcd(a, b)
+print(x, y)
