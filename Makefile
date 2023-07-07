@@ -16,7 +16,8 @@ verify-src:
 verify-exp:
 	oj-verify run expansion/_tests/*/*.test.py
 
-verify: verify-src verify-exp
+verify:
+	oj-verify run
 
 docs:
 	oj-verify docs
