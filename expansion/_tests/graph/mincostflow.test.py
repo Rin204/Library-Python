@@ -1,3 +1,8 @@
+# verification-helper: PROBLEM https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=GRL_6_B&lang=ja
+from pathlib import Path
+import sys
+
+sys.path.append(str(Path(__file__).resolve().parent.parent.parent.parent))
 import heapq
 
 # from dataclasses import dataclass
@@ -179,3 +184,15 @@ class mcf_graph:
             prev_cost_per_flow = d
 
         return result
+
+
+n, m, f = map(int, input().split())
+G = mcf_graph(n)
+for _ in range(m):
+    G.add_edge(*map(int, input().split()))
+
+fl, c = G.flow(0, n - 1, f)
+if fl < f:
+    c = -1
+
+print(c)
