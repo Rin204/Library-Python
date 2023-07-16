@@ -1,11 +1,3 @@
-[tool.poetry]
-name = "python-library"
-version = "0.1.0"
-description = ""
-authors = ["rin204"]
-readme = "README.md"
-packages = [{include = "python_library"}]
-
 [tool.black]
 line-length = 99
 
