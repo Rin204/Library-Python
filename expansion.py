@@ -11,7 +11,7 @@ def main(input_file, output_file):
             if not os.path.exists(filename):
                 return False
             if filename in se:
-                return
+                return True
             se.add(filename)
             path.pop()
             with open(filename, "r") as f2:
