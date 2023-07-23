@@ -1,0 +1,32 @@
+name: format
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+
+    - name: Set up Python
+      uses: actions/setup-python@v1
+
+    - name: Install dependencies
+      run: pip3 install black ruff
+
+    - name: run black
+      run: black --check .
+
+    - name: run ruff
+      run: ruff check .
+
+    - name: check generated files
+      run: |
+        make exp
+        git add .
+        git diff --cached --exit-code
