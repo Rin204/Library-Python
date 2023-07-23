@@ -1,6 +1,12 @@
 ---
 data:
-  _extendedDependsOn: []
+  _extendedDependsOn:
+  - icon: ':x:'
+    path: src/convolution/NTT998.py
+    title: src/convolution/NTT998.py
+  - icon: ':x:'
+    path: src/polynomial/BostanMori998.py
+    title: src/polynomial/BostanMori998.py
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: true
@@ -15,7 +21,7 @@ data:
     \ basedir=basedir, options={'include_paths': [basedir]}).decode()\n          \
     \         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\
     \  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/languages/python.py\"\
-    , line 96, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
+    , line 108, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
   code: '# verification-helper: PROBLEM https://judge.yosupo.jp/problem/kth_term_of_linearly_recurrent_sequence
 
     from pathlib import Path
@@ -46,11 +52,13 @@ data:
     print(ans)
 
     '
-  dependsOn: []
+  dependsOn:
+  - src/convolution/NTT998.py
+  - src/polynomial/BostanMori998.py
   isVerificationFile: true
   path: src/$tests/polynomial/BostanMori.test.py
   requiredBy: []
-  timestamp: '1970-01-01 00:00:00+00:00'
+  timestamp: '2023-07-23 08:45:17+09:00'
   verificationStatus: TEST_WRONG_ANSWER
   verifiedWith: []
 documentation_of: src/$tests/polynomial/BostanMori.test.py

@@ -1,11 +1,35 @@
 ---
 data:
-  _extendedDependsOn: []
+  _extendedDependsOn:
+  - icon: ':x:'
+    path: src/convolution/NTT998.py
+    title: src/convolution/NTT998.py
+  - icon: ':x:'
+    path: src/math/Combination.py
+    title: src/math/Combination.py
+  - icon: ':x:'
+    path: src/math/cipolla.py
+    title: src/math/cipolla.py
+  - icon: ':warning:'
+    path: src/math/modinv.py
+    title: src/math/modinv.py
   _extendedRequiredBy: []
-  _extendedVerifiedWith: []
-  _isVerificationFailed: false
+  _extendedVerifiedWith:
+  - icon: ':x:'
+    path: src/$tests/polynomial/inv_of_FormalPowerSeries.test.py
+    title: src/$tests/polynomial/inv_of_FormalPowerSeries.test.py
+  - icon: ':x:'
+    path: src/$tests/polynomial/log_of_FormalPowerSeries.test.py
+    title: src/$tests/polynomial/log_of_FormalPowerSeries.test.py
+  - icon: ':x:'
+    path: src/$tests/polynomial/pow_of_FormalPowerSeries.test.py
+    title: src/$tests/polynomial/pow_of_FormalPowerSeries.test.py
+  - icon: ':x:'
+    path: src/$tests/polynomial/sqrt_of_FormalPowerSeries.test.py
+    title: src/$tests/polynomial/sqrt_of_FormalPowerSeries.test.py
+  _isVerificationFailed: true
   _pathExtension: py
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':x:'
   attributes:
     links: []
   bundledCode: "Traceback (most recent call last):\n  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/documentation/build.py\"\
@@ -13,7 +37,7 @@ data:
     \ basedir=basedir, options={'include_paths': [basedir]}).decode()\n          \
     \         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\
     \  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/languages/python.py\"\
-    , line 96, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
+    , line 108, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
   code: "from src.convolution.NTT998 import NTT998\nfrom src.math.modinv import modinv\n\
     from src.math.Combination import Combination\nfrom src.math.cipolla import cipolla\n\
     \n\nclass FormalPowerSeries998(list):\n    Comb = Combination(200000)\n\n    def\
@@ -89,13 +113,21 @@ data:
     \ return FormalPowerSeries998([])\n\n        inv2 = 499122177\n        g = FormalPowerSeries998([sq])\n\
     \        l = 1\n        while l < deg:\n            l *= 2\n            g = (g\
     \ + self[:l] * g.inv(l)) * inv2\n            del g[l:]\n\n        return g[:deg]\n"
-  dependsOn: []
+  dependsOn:
+  - src/math/modinv.py
+  - src/convolution/NTT998.py
+  - src/math/Combination.py
+  - src/math/cipolla.py
   isVerificationFile: false
   path: src/polynomial/FormalPowerSeries998.py
   requiredBy: []
-  timestamp: '1970-01-01 00:00:00+00:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  timestamp: '2023-07-23 02:22:37+09:00'
+  verificationStatus: LIBRARY_ALL_WA
+  verifiedWith:
+  - src/$tests/polynomial/inv_of_FormalPowerSeries.test.py
+  - src/$tests/polynomial/pow_of_FormalPowerSeries.test.py
+  - src/$tests/polynomial/sqrt_of_FormalPowerSeries.test.py
+  - src/$tests/polynomial/log_of_FormalPowerSeries.test.py
 documentation_of: src/polynomial/FormalPowerSeries998.py
 layout: document
 redirect_from:

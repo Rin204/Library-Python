@@ -2,10 +2,13 @@
 data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
-  _extendedVerifiedWith: []
-  _isVerificationFailed: false
+  _extendedVerifiedWith:
+  - icon: ':x:'
+    path: src/$tests/data_structure/SparseTable.test.py
+    title: src/$tests/data_structure/SparseTable.test.py
+  _isVerificationFailed: true
   _pathExtension: py
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':x:'
   attributes:
     links: []
   bundledCode: "Traceback (most recent call last):\n  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/documentation/build.py\"\
@@ -13,7 +16,7 @@ data:
     \ basedir=basedir, options={'include_paths': [basedir]}).decode()\n          \
     \         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\
     \  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/languages/python.py\"\
-    , line 96, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
+    , line 108, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
   code: "class SparseTable:\n    def __init__(self, A, ope):\n        self.n = len(A)\n\
     \        self.ope = ope\n        self.logn = (self.n - 1).bit_length()\n     \
     \   if self.n == 1:\n            self.logn = 1\n        self.table = [0] * (self.logn\
@@ -32,8 +35,9 @@ data:
   path: src/data_structure/SparseTable.py
   requiredBy: []
   timestamp: '2023-06-29 01:22:58+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  verificationStatus: LIBRARY_ALL_WA
+  verifiedWith:
+  - src/$tests/data_structure/SparseTable.test.py
 documentation_of: src/data_structure/SparseTable.py
 layout: document
 redirect_from:

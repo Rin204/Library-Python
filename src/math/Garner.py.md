@@ -1,17 +1,20 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':warning:'
+  - icon: ':x:'
     path: src/math/ext_gcd.py
     title: src/math/ext_gcd.py
   _extendedRequiredBy:
-  - icon: ':warning:'
+  - icon: ':x:'
     path: src/math/CombinationArbitrary.py
     title: src/math/CombinationArbitrary.py
-  _extendedVerifiedWith: []
-  _isVerificationFailed: false
+  _extendedVerifiedWith:
+  - icon: ':x:'
+    path: src/$tests/math/Garner.test.py
+    title: src/$tests/math/Garner.test.py
+  _isVerificationFailed: true
   _pathExtension: py
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':x:'
   attributes:
     links: []
   bundledCode: "Traceback (most recent call last):\n  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/documentation/build.py\"\
@@ -19,7 +22,7 @@ data:
     \ basedir=basedir, options={'include_paths': [basedir]}).decode()\n          \
     \         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\
     \  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/languages/python.py\"\
-    , line 96, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
+    , line 108, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
   code: "from src.math.ext_gcd import ext_gcd\n\n\ndef Garner(R, M):\n    r = 0\n\
     \    m = 1\n    for ri, mi in zip(R, M):\n        if ri < 0 or mi <= ri:\n   \
     \         ri %= mi\n\n        if m < mi:\n            m, mi = mi, m\n        \
@@ -35,8 +38,9 @@ data:
   requiredBy:
   - src/math/CombinationArbitrary.py
   timestamp: '2023-07-06 23:24:06+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  verificationStatus: LIBRARY_ALL_WA
+  verifiedWith:
+  - src/$tests/math/Garner.test.py
 documentation_of: src/math/Garner.py
 layout: document
 redirect_from:

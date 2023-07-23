@@ -13,7 +13,7 @@ data:
     \ basedir=basedir, options={'include_paths': [basedir]}).decode()\n          \
     \         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\
     \  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/languages/python.py\"\
-    , line 96, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
+    , line 108, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
   code: "def CartesianTree(A):\n    n = len(A)\n    P = [-1] * n\n    B = [-1] * n\n\
     \    p = -1\n\n    for i, a in enumerate(A):\n        while p >= 0 and a < A[B[p]]:\n\
     \            j = B[p]\n            p -= 1\n            if p >= 0 and a < A[B[p]]:\n\

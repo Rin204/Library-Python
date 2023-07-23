@@ -13,7 +13,7 @@ data:
     \ basedir=basedir, options={'include_paths': [basedir]}).decode()\n          \
     \         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\
     \  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/languages/python.py\"\
-    , line 96, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
+    , line 108, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
   code: "from collections import deque\n\n\nclass ConvexHullTrick:\n    def __init__(self):\n\
     \        self.deq = deque()\n\n    def check(f1, f2, f3):\n        return (f2[0]\
     \ - f1[0]) * (f3[1] - f2[1]) >= (f2[1] - f1[1]) * (f3[0] - f2[0])\n\n    def f(self,\
@@ -28,7 +28,7 @@ data:
   isVerificationFile: false
   path: expansion/data_structure/ConvexHullTrick.py
   requiredBy: []
-  timestamp: '1970-01-01 00:00:00+00:00'
+  timestamp: '2023-07-12 23:29:13+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: expansion/data_structure/ConvexHullTrick.py

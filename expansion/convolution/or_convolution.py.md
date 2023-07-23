@@ -13,7 +13,7 @@ data:
     \ basedir=basedir, options={'include_paths': [basedir]}).decode()\n          \
     \         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\
     \  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/languages/python.py\"\
-    , line 96, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
+    , line 108, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
   code: "def or_convolution(A, B, MOD=-1):\n    n = max(len(A), len(B))\n    l = (n\
     \ - 1).bit_length()\n    n = 1 << l\n    A += [0] * (n - len(A))\n    B += [0]\
     \ * (n - len(B))\n\n    def f(A):\n        for i in range(l):\n            for\

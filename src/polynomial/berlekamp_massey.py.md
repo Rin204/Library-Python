@@ -1,11 +1,17 @@
 ---
 data:
-  _extendedDependsOn: []
+  _extendedDependsOn:
+  - icon: ':warning:'
+    path: src/math/modinv.py
+    title: src/math/modinv.py
   _extendedRequiredBy: []
-  _extendedVerifiedWith: []
-  _isVerificationFailed: false
+  _extendedVerifiedWith:
+  - icon: ':x:'
+    path: src/$tests/polynomial/berlekamp_massey.test.py
+    title: src/$tests/polynomial/berlekamp_massey.test.py
+  _isVerificationFailed: true
   _pathExtension: py
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':x:'
   attributes:
     links: []
   bundledCode: "Traceback (most recent call last):\n  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/documentation/build.py\"\
@@ -13,7 +19,7 @@ data:
     \ basedir=basedir, options={'include_paths': [basedir]}).decode()\n          \
     \         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\
     \  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/languages/python.py\"\
-    , line 96, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
+    , line 108, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
   code: "from src.math.modinv import modinv\n\n\ndef berlekamp_massey(A, MOD):\n \
     \   n = len(A)\n    B = [MOD - 1]\n    C = [MOD - 1]\n    y = 1\n    for j in\
     \ range(1, n + 1):\n        l = len(C)\n        m = len(B)\n        x = 0\n  \
@@ -25,13 +31,15 @@ data:
     \ - i] %= MOD\n            B = tmp\n            y = x\n        else:\n       \
     \     for i in range(m):\n                C[l - 1 - i] -= freq * B[m - 1 - i]\n\
     \                C[l - 1 - i] %= MOD\n\n    return C[::-1][1:]\n"
-  dependsOn: []
+  dependsOn:
+  - src/math/modinv.py
   isVerificationFile: false
   path: src/polynomial/berlekamp_massey.py
   requiredBy: []
   timestamp: '2023-07-23 02:22:37+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  verificationStatus: LIBRARY_ALL_WA
+  verifiedWith:
+  - src/$tests/polynomial/berlekamp_massey.test.py
 documentation_of: src/polynomial/berlekamp_massey.py
 layout: document
 redirect_from:

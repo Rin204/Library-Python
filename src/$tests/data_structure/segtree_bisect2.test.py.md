@@ -1,6 +1,9 @@
 ---
 data:
-  _extendedDependsOn: []
+  _extendedDependsOn:
+  - icon: ':x:'
+    path: src/data_structure/SegmentTreeBase_.py
+    title: src/data_structure/SegmentTreeBase_.py
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: true
@@ -15,7 +18,7 @@ data:
     \ basedir=basedir, options={'include_paths': [basedir]}).decode()\n          \
     \         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\
     \  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/languages/python.py\"\
-    , line 96, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
+    , line 108, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
   code: "# verification-helper: PROBLEM https://yukicoder.me/problems/no/649\n\nfrom\
     \ pathlib import Path\nimport sys\n\nsys.path.append(str(Path(__file__).resolve().parent.parent.parent.parent))\n\
     \nfrom random import randrange\n\n\nfrom src.data_structure.SegmentTreeBase_ import\
@@ -35,11 +38,12 @@ data:
     \ lambda x: x < k) - 1\n            if p == -1:\n                print(-1)\n \
     \           else:\n                print(X[p])\n                seg[p] = seg[p]\
     \ - 1\n        else:\n            seg[dic[q]] = seg[dic[q]] + 1\n"
-  dependsOn: []
+  dependsOn:
+  - src/data_structure/SegmentTreeBase_.py
   isVerificationFile: true
   path: src/$tests/data_structure/segtree_bisect2.test.py
   requiredBy: []
-  timestamp: '1970-01-01 00:00:00+00:00'
+  timestamp: '2023-07-23 08:45:17+09:00'
   verificationStatus: TEST_WRONG_ANSWER
   verifiedWith: []
 documentation_of: src/$tests/data_structure/segtree_bisect2.test.py

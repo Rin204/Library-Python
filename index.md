@@ -250,75 +250,75 @@ data:
       title: expansion_all.py
   - name: src/convolution
     pages:
-    - icon: ':warning:'
+    - icon: ':x:'
       path: src/convolution/NTT.py
       title: src/convolution/NTT.py
-    - icon: ':warning:'
+    - icon: ':x:'
       path: src/convolution/NTT998.py
       title: src/convolution/NTT998.py
-    - icon: ':warning:'
+    - icon: ':x:'
       path: src/convolution/and_convolution.py
       title: src/convolution/and_convolution.py
-    - icon: ':warning:'
+    - icon: ':x:'
       path: src/convolution/and_convolution_global_mod.py
       title: src/convolution/and_convolution_global_mod.py
-    - icon: ':warning:'
+    - icon: ':x:'
       path: src/convolution/or_convolution.py
       title: src/convolution/or_convolution.py
-    - icon: ':warning:'
+    - icon: ':x:'
       path: src/convolution/or_convolution_global_mod.py
       title: src/convolution/or_convolution_global_mod.py
-    - icon: ':warning:'
+    - icon: ':x:'
       path: src/convolution/xor_convolution.py
       title: src/convolution/xor_convolution.py
-    - icon: ':warning:'
+    - icon: ':x:'
       path: src/convolution/xor_convolution_global_mod.py
       title: src/convolution/xor_convolution_global_mod.py
   - name: src/data_structure
     pages:
-    - icon: ':warning:'
+    - icon: ':x:'
       path: src/data_structure/BIT.py
       title: src/data_structure/BIT.py
-    - icon: ':warning:'
+    - icon: ':x:'
       path: src/data_structure/ConvexHullTrick.py
       title: src/data_structure/ConvexHullTrick.py
-    - icon: ':warning:'
+    - icon: ':x:'
       path: src/data_structure/DisjointSparseTable.py
       title: src/data_structure/DisjointSparseTable.py
-    - icon: ':warning:'
+    - icon: ':x:'
       path: src/data_structure/DisjointSparseTableBase_.py
       title: src/data_structure/DisjointSparseTableBase_.py
-    - icon: ':warning:'
+    - icon: ':x:'
       path: src/data_structure/LazySegmentTree.py
       title: src/data_structure/LazySegmentTree.py
-    - icon: ':warning:'
+    - icon: ':x:'
       path: src/data_structure/LazySegmentTreeBase_.py
       title: src/data_structure/LazySegmentTreeBase_.py
-    - icon: ':warning:'
+    - icon: ':x:'
       path: src/data_structure/RollbackUnionFind.py
       title: src/data_structure/RollbackUnionFind.py
-    - icon: ':warning:'
+    - icon: ':x:'
       path: src/data_structure/SWAG.py
       title: src/data_structure/SWAG.py
-    - icon: ':warning:'
+    - icon: ':x:'
       path: src/data_structure/SWAGBase_.py
       title: src/data_structure/SWAGBase_.py
-    - icon: ':warning:'
+    - icon: ':x:'
       path: src/data_structure/SegmentTree.py
       title: src/data_structure/SegmentTree.py
-    - icon: ':warning:'
+    - icon: ':x:'
       path: src/data_structure/SegmentTreeBase_.py
       title: src/data_structure/SegmentTreeBase_.py
-    - icon: ':warning:'
+    - icon: ':x:'
       path: src/data_structure/SparseTable.py
       title: src/data_structure/SparseTable.py
-    - icon: ':warning:'
+    - icon: ':x:'
       path: src/data_structure/SparseTableBase_.py
       title: src/data_structure/SparseTableBase_.py
-    - icon: ':warning:'
+    - icon: ':x:'
       path: src/data_structure/UnionFind.py
       title: src/data_structure/UnionFind.py
-    - icon: ':warning:'
+    - icon: ':x:'
       path: src/data_structure/WeightedUnionFind.py
       title: src/data_structure/WeightedUnionFind.py
   - name: src/data_structure/segtree_
@@ -328,74 +328,74 @@ data:
       title: src/data_structure/segtree_/PointAddRangeSum.py
   - name: src/geometry
     pages:
-    - icon: ':warning:'
+    - icon: ':x:'
       path: src/geometry/arg_sort.py
       title: src/geometry/arg_sort.py
-    - icon: ':warning:'
+    - icon: ':x:'
       path: src/geometry/convex_hull.py
       title: src/geometry/convex_hull.py
   - name: src/graph
     pages:
-    - icon: ':warning:'
+    - icon: ':x:'
       path: src/graph/Hungarian.py
       title: src/graph/Hungarian.py
     - icon: ':warning:'
       path: src/graph/SCC.py
       title: src/graph/SCC.py
-    - icon: ':warning:'
+    - icon: ':x:'
       path: src/graph/bellmanFord.py
       title: src/graph/bellmanFord.py
-    - icon: ':warning:'
+    - icon: ':x:'
       path: src/graph/dijkstra.py
       title: src/graph/dijkstra.py
-    - icon: ':warning:'
+    - icon: ':x:'
       path: src/graph/lowLink.py
       title: src/graph/lowLink.py
-    - icon: ':warning:'
+    - icon: ':x:'
       path: src/graph/maxflow.py
       title: src/graph/maxflow.py
-    - icon: ':warning:'
+    - icon: ':x:'
       path: src/graph/mincostflow.py
       title: src/graph/mincostflow.py
   - name: src/math
     pages:
-    - icon: ':warning:'
+    - icon: ':x:'
       path: src/math/Combination.py
       title: src/math/Combination.py
-    - icon: ':warning:'
+    - icon: ':x:'
       path: src/math/CombinationArbitrary.py
       title: src/math/CombinationArbitrary.py
-    - icon: ':warning:'
+    - icon: ':x:'
       path: src/math/EnumeratePrimes.py
       title: src/math/EnumeratePrimes.py
-    - icon: ':warning:'
+    - icon: ':x:'
       path: src/math/Garner.py
       title: src/math/Garner.py
-    - icon: ':warning:'
+    - icon: ':x:'
       path: src/math/MillerRabin.py
       title: src/math/MillerRabin.py
-    - icon: ':warning:'
+    - icon: ':x:'
       path: src/math/PollardRho.py
       title: src/math/PollardRho.py
-    - icon: ':warning:'
+    - icon: ':x:'
       path: src/math/Quotients.py
       title: src/math/Quotients.py
-    - icon: ':warning:'
+    - icon: ':x:'
       path: src/math/TwoSAT.py
       title: src/math/TwoSAT.py
-    - icon: ':warning:'
+    - icon: ':x:'
       path: src/math/cipolla.py
       title: src/math/cipolla.py
-    - icon: ':warning:'
+    - icon: ':x:'
       path: src/math/ext_gcd.py
       title: src/math/ext_gcd.py
-    - icon: ':warning:'
+    - icon: ':x:'
       path: src/math/floor_sum.py
       title: src/math/floor_sum.py
-    - icon: ':warning:'
+    - icon: ':x:'
       path: src/math/mat_exp.py
       title: src/math/mat_exp.py
-    - icon: ':warning:'
+    - icon: ':x:'
       path: src/math/mat_exp_global_mod.py
       title: src/math/mat_exp_global_mod.py
     - icon: ':warning:'
@@ -403,25 +403,25 @@ data:
       title: src/math/modinv.py
   - name: src/misc
     pages:
-    - icon: ':warning:'
+    - icon: ':x:'
       path: src/misc/Bitset.py
       title: src/misc/Bitset.py
-    - icon: ':warning:'
+    - icon: ':x:'
       path: src/misc/DeletableHeapq.py
       title: src/misc/DeletableHeapq.py
     - icon: ':warning:'
       path: src/misc/FastIO.py
       title: src/misc/FastIO.py
-    - icon: ':warning:'
+    - icon: ':x:'
       path: src/misc/MadianHeap.py
       title: src/misc/MadianHeap.py
-    - icon: ':warning:'
+    - icon: ':x:'
       path: src/misc/Mo.py
       title: src/misc/Mo.py
-    - icon: ':warning:'
+    - icon: ':x:'
       path: src/misc/MoBase_.py
       title: src/misc/MoBase_.py
-    - icon: ':warning:'
+    - icon: ':x:'
       path: src/misc/TopKHeap.py
       title: src/misc/TopKHeap.py
     - icon: ':warning:'
@@ -435,56 +435,56 @@ data:
       title: src/misc/popcount.py
   - name: src/polynomial
     pages:
-    - icon: ':warning:'
+    - icon: ':x:'
       path: src/polynomial/BostanMori998.py
       title: src/polynomial/BostanMori998.py
-    - icon: ':warning:'
+    - icon: ':x:'
       path: src/polynomial/FormalPowerSeries998.py
       title: src/polynomial/FormalPowerSeries998.py
-    - icon: ':warning:'
+    - icon: ':x:'
       path: src/polynomial/berlekamp_massey.py
       title: src/polynomial/berlekamp_massey.py
-    - icon: ':warning:'
+    - icon: ':x:'
       path: src/polynomial/berlekamp_massey_global_mod.py
       title: src/polynomial/berlekamp_massey_global_mod.py
   - name: src/string
     pages:
-    - icon: ':warning:'
+    - icon: ':x:'
       path: src/string/AhoCorasick.py
       title: src/string/AhoCorasick.py
-    - icon: ':warning:'
+    - icon: ':x:'
       path: src/string/KMP.py
       title: src/string/KMP.py
-    - icon: ':warning:'
+    - icon: ':x:'
       path: src/string/RollingHash.py
       title: src/string/RollingHash.py
-    - icon: ':warning:'
+    - icon: ':x:'
       path: src/string/Z_algorithm.py
       title: src/string/Z_algorithm.py
-    - icon: ':warning:'
+    - icon: ':x:'
       path: src/string/manacher.py
       title: src/string/manacher.py
-    - icon: ':warning:'
+    - icon: ':x:'
       path: src/string/suffix_array.py
       title: src/string/suffix_array.py
-    - icon: ':warning:'
+    - icon: ':x:'
       path: src/string/wildcard_mathing.py
       title: src/string/wildcard_mathing.py
   - name: src/tree
     pages:
-    - icon: ':warning:'
+    - icon: ':x:'
       path: src/tree/CartesianTree.py
       title: src/tree/CartesianTree.py
-    - icon: ':warning:'
+    - icon: ':x:'
       path: src/tree/CentroidDecomposition.py
       title: src/tree/CentroidDecomposition.py
-    - icon: ':warning:'
+    - icon: ':x:'
       path: src/tree/HLD.py
       title: src/tree/HLD.py
-    - icon: ':warning:'
+    - icon: ':x:'
       path: src/tree/Kruskal.py
       title: src/tree/Kruskal.py
-    - icon: ':warning:'
+    - icon: ':x:'
       path: src/tree/LCA.py
       title: src/tree/LCA.py
   verificationCategories:

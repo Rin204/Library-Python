@@ -13,7 +13,7 @@ data:
     \ basedir=basedir, options={'include_paths': [basedir]}).decode()\n          \
     \         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\
     \  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/languages/python.py\"\
-    , line 96, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
+    , line 108, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
   code: "import os\nimport datetime\nimport glob\nimport json\n\n\ndef get_time_expfile(input_file):\n\
     \    write = []\n    se = set()\n\n    def dfs(path):\n        filename = \"/\"\
     .join(path)\n        if not os.path.exists(filename):\n            return False\n\
@@ -41,7 +41,7 @@ data:
   isVerificationFile: false
   path: expansion_all.py
   requiredBy: []
-  timestamp: '1970-01-01 00:00:00+00:00'
+  timestamp: '2023-07-22 23:47:53+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: expansion_all.py

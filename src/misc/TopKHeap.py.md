@@ -1,11 +1,17 @@
 ---
 data:
-  _extendedDependsOn: []
+  _extendedDependsOn:
+  - icon: ':x:'
+    path: src/misc/DeletableHeapq.py
+    title: src/misc/DeletableHeapq.py
   _extendedRequiredBy: []
-  _extendedVerifiedWith: []
-  _isVerificationFailed: false
+  _extendedVerifiedWith:
+  - icon: ':x:'
+    path: src/$tests/misc/TopKHeap.test.py
+    title: src/$tests/misc/TopKHeap.test.py
+  _isVerificationFailed: true
   _pathExtension: py
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':x:'
   attributes:
     links: []
   bundledCode: "Traceback (most recent call last):\n  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/documentation/build.py\"\
@@ -13,7 +19,7 @@ data:
     \ basedir=basedir, options={'include_paths': [basedir]}).decode()\n          \
     \         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\
     \  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/languages/python.py\"\
-    , line 96, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
+    , line 108, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
   code: "from src.misc.DeletableHeapq import DeletableHeapq\n\n\nclass TopKHeap:\n\
     \    def __init__(self, K, reverse=False, A=None):\n        self.K = K\n     \
     \   if not reverse:\n            self.upp = DeletableHeapq()\n            self.low\
@@ -27,13 +33,15 @@ data:
     \ remove(self, x):\n        if len(self.low) > 0 and x <= self.low[0]:\n     \
     \       self.low.remove(x)\n        else:\n            self.upp.remove(x)\n  \
     \          if len(self.low) > 0:\n                self.upp.push(self.low.pop())\n"
-  dependsOn: []
+  dependsOn:
+  - src/misc/DeletableHeapq.py
   isVerificationFile: false
   path: src/misc/TopKHeap.py
   requiredBy: []
-  timestamp: '1970-01-01 00:00:00+00:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  timestamp: '2023-07-16 15:47:36+09:00'
+  verificationStatus: LIBRARY_ALL_WA
+  verifiedWith:
+  - src/$tests/misc/TopKHeap.test.py
 documentation_of: src/misc/TopKHeap.py
 layout: document
 redirect_from:

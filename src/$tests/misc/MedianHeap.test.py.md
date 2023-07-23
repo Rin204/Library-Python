@@ -1,6 +1,9 @@
 ---
 data:
-  _extendedDependsOn: []
+  _extendedDependsOn:
+  - icon: ':x:'
+    path: src/misc/MadianHeap.py
+    title: src/misc/MadianHeap.py
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: true
@@ -15,7 +18,7 @@ data:
     \ basedir=basedir, options={'include_paths': [basedir]}).decode()\n          \
     \         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\
     \  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/languages/python.py\"\
-    , line 96, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
+    , line 108, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
   code: "# verification-helper: PROBLEM https://judge.yosupo.jp/problem/aplusb\nfrom\
     \ pathlib import Path\nimport sys\n\nsys.path.append(str(Path(__file__).resolve().parent.parent.parent.parent))\n\
     \nfrom src.misc.MadianHeap import MedianHeap\nimport random\n\n\nA = [random.randrange(10**9)\
@@ -27,11 +30,12 @@ data:
     \  else:\n        assert hq.get_med() == [A[n // 2 - 1], A[n // 2]]\n\n    m =\
     \ A[n // 2]\n    assert hq.abs_sum() == sum(abs(a - m) for a in A)\n\n\na, b =\
     \ map(int, input().split())\nprint(a + b)\n"
-  dependsOn: []
+  dependsOn:
+  - src/misc/MadianHeap.py
   isVerificationFile: true
   path: src/$tests/misc/MedianHeap.test.py
   requiredBy: []
-  timestamp: '1970-01-01 00:00:00+00:00'
+  timestamp: '2023-07-23 08:45:17+09:00'
   verificationStatus: TEST_WRONG_ANSWER
   verifiedWith: []
 documentation_of: src/$tests/misc/MedianHeap.test.py

@@ -13,7 +13,7 @@ data:
     \ basedir=basedir, options={'include_paths': [basedir]}).decode()\n          \
     \         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\
     \  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/languages/python.py\"\
-    , line 96, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
+    , line 108, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
   code: "def manacher(S):\n    n = len(S)\n\n    n = 2 * n + 1\n    L = [0] * n\n\n\
     \    c = 0\n    for i in range(n):\n        j = 2 * c - i\n        if i + L[j]\
     \ < c + L[c]:\n            L[i] = L[j]\n        else:\n            j = c + L[c]\

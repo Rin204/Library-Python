@@ -13,7 +13,7 @@ data:
     \ basedir=basedir, options={'include_paths': [basedir]}).decode()\n          \
     \         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\
     \  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/languages/python.py\"\
-    , line 96, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
+    , line 108, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
   code: "import heapq\n\n\ndef dijkstra(edges, s=0, inf=1 << 60):\n    \"\"\"\n  \
     \  edges[from] = [(to1, cost1), (to2, cost2), ...)]\n    \"\"\"\n    n = len(edges)\n\
     \    dist = [inf] * n\n    dist[s] = 0\n    hq = [s]\n    while hq:\n        tmp\
@@ -26,7 +26,7 @@ data:
   isVerificationFile: false
   path: expansion/graph/dijkstra.py
   requiredBy: []
-  timestamp: '1970-01-01 00:00:00+00:00'
+  timestamp: '2023-07-06 22:40:04+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: expansion/graph/dijkstra.py

@@ -2,10 +2,13 @@
 data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
-  _extendedVerifiedWith: []
-  _isVerificationFailed: false
+  _extendedVerifiedWith:
+  - icon: ':x:'
+    path: src/$tests/tree/CentroidDecomposition.test.py
+    title: src/$tests/tree/CentroidDecomposition.test.py
+  _isVerificationFailed: true
   _pathExtension: py
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':x:'
   attributes:
     links: []
   bundledCode: "Traceback (most recent call last):\n  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/documentation/build.py\"\
@@ -13,7 +16,7 @@ data:
     \ basedir=basedir, options={'include_paths': [basedir]}).decode()\n          \
     \         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\
     \  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/languages/python.py\"\
-    , line 96, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
+    , line 108, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
   code: "class CentroidDecomposition:\n    def __init__(self, n, edges=None):\n  \
     \      self.n = n\n        self.par = [-1] * n  # \u91CD\u5FC3\u5206\u89E3\u6728\
     \u306E\u89AA\n        self.depth = [-1] * n  # \u91CD\u5FC3\u5206\u89E3\u6728\u306E\
@@ -76,8 +79,9 @@ data:
   path: src/tree/CentroidDecomposition.py
   requiredBy: []
   timestamp: '2023-07-08 15:30:30+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  verificationStatus: LIBRARY_ALL_WA
+  verifiedWith:
+  - src/$tests/tree/CentroidDecomposition.test.py
 documentation_of: src/tree/CentroidDecomposition.py
 layout: document
 redirect_from:

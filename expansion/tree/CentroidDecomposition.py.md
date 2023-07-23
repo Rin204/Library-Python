@@ -13,7 +13,7 @@ data:
     \ basedir=basedir, options={'include_paths': [basedir]}).decode()\n          \
     \         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\
     \  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/languages/python.py\"\
-    , line 96, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
+    , line 108, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
   code: "class CentroidDecomposition:\n    def __init__(self, n, edges=None):\n  \
     \      self.n = n\n        self.par = [-1] * n  # \u91CD\u5FC3\u5206\u89E3\u6728\
     \u306E\u89AA\n        self.depth = [-1] * n  # \u91CD\u5FC3\u5206\u89E3\u6728\u306E\

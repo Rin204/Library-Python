@@ -1,6 +1,12 @@
 ---
 data:
-  _extendedDependsOn: []
+  _extendedDependsOn:
+  - icon: ':x:'
+    path: src/data_structure/BIT.py
+    title: src/data_structure/BIT.py
+  - icon: ':x:'
+    path: src/misc/Mo.py
+    title: src/misc/Mo.py
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: true
@@ -15,7 +21,7 @@ data:
     \ basedir=basedir, options={'include_paths': [basedir]}).decode()\n          \
     \         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\
     \  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/languages/python.py\"\
-    , line 96, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
+    , line 108, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
   code: "# verification-helper: PROBLEM https://judge.yosupo.jp/problem/static_range_inversions_query\n\
     from pathlib import Path\nimport sys\n\nsys.path.append(str(Path(__file__).resolve().parent.parent.parent.parent))\n\
     from src.misc.Mo import Mo\nfrom src.data_structure.BIT import BIT\nimport sys\n\
@@ -30,11 +36,13 @@ data:
     \    global inv\n    a = A[i]\n    inv -= bit.sum(a + 1, n)\n    bit.add(a, -1)\n\
     \n\ndef rem(i):\n    ans[i] = inv\n\n\nmo.run(add_left, add_right, delete_left,\
     \ delete_right, rem)\nprint(*ans, sep=\"\\n\")\n"
-  dependsOn: []
+  dependsOn:
+  - src/misc/Mo.py
+  - src/data_structure/BIT.py
   isVerificationFile: true
   path: src/$tests/misc/Mo.test.py
   requiredBy: []
-  timestamp: '1970-01-01 00:00:00+00:00'
+  timestamp: '2023-07-23 08:45:17+09:00'
   verificationStatus: TEST_WRONG_ANSWER
   verifiedWith: []
 documentation_of: src/$tests/misc/Mo.test.py

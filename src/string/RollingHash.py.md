@@ -2,10 +2,16 @@
 data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
-  _extendedVerifiedWith: []
-  _isVerificationFailed: false
+  _extendedVerifiedWith:
+  - icon: ':x:'
+    path: src/$tests/string/RollingHash.test.py
+    title: src/$tests/string/RollingHash.test.py
+  - icon: ':x:'
+    path: src/$tests/string/wildcard_mathing.test.py
+    title: src/$tests/string/wildcard_mathing.test.py
+  _isVerificationFailed: true
   _pathExtension: py
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':x:'
   attributes:
     links: []
   bundledCode: "Traceback (most recent call last):\n  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/documentation/build.py\"\
@@ -13,7 +19,7 @@ data:
     \ basedir=basedir, options={'include_paths': [basedir]}).decode()\n          \
     \         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\
     \  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/languages/python.py\"\
-    , line 96, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
+    , line 108, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
   code: "import random\r\n\r\n\r\nclass RollingHash:\r\n    mask30 = (1 << 30) - 1\r\
     \n    mask31 = (1 << 31) - 1\r\n    MOD = (1 << 61) - 1\r\n    Base = None\r\n\
     \    pw = [1]\r\n\r\n    def __init__(self, S):\r\n        if RollingHash.Base\
@@ -37,9 +43,11 @@ data:
   isVerificationFile: false
   path: src/string/RollingHash.py
   requiredBy: []
-  timestamp: '1970-01-01 00:00:00+00:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  timestamp: '2023-06-12 00:17:20+09:00'
+  verificationStatus: LIBRARY_ALL_WA
+  verifiedWith:
+  - src/$tests/string/wildcard_mathing.test.py
+  - src/$tests/string/RollingHash.test.py
 documentation_of: src/string/RollingHash.py
 layout: document
 redirect_from:

@@ -13,7 +13,7 @@ data:
     \ basedir=basedir, options={'include_paths': [basedir]}).decode()\n          \
     \         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\
     \  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/languages/python.py\"\
-    , line 96, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
+    , line 108, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
   code: "import heapq\n\n\nclass DeletableHeapq:\n    def __init__(self, lst=None,\
     \ reverse=False):\n        if reverse:\n            self.pm = -1\n        else:\n\
     \            self.pm = 1\n        if lst is None:\n            self.hq = []\n\
@@ -53,7 +53,7 @@ data:
   isVerificationFile: false
   path: expansion/misc/TopKHeap.py
   requiredBy: []
-  timestamp: '1970-01-01 00:00:00+00:00'
+  timestamp: '2023-07-16 15:47:36+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: expansion/misc/TopKHeap.py

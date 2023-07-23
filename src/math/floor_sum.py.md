@@ -2,10 +2,13 @@
 data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
-  _extendedVerifiedWith: []
-  _isVerificationFailed: false
+  _extendedVerifiedWith:
+  - icon: ':x:'
+    path: src/$tests/math/floor_sum.test.py
+    title: src/$tests/math/floor_sum.test.py
+  _isVerificationFailed: true
   _pathExtension: py
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':x:'
   attributes:
     links: []
   bundledCode: "Traceback (most recent call last):\n  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/documentation/build.py\"\
@@ -13,7 +16,7 @@ data:
     \ basedir=basedir, options={'include_paths': [basedir]}).decode()\n          \
     \         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\
     \  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/languages/python.py\"\
-    , line 96, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
+    , line 108, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
   code: "def floor_sum(n, m, a, b):\n    \"\"\"\n    return \\\\sum_{i=0}^{n-1} ((a*i+b)//m)\n\
     \    \"\"\"\n    ret = 0\n    while True:\n        if a >= m:\n            ret\
     \ += (n - 1) * n // 2 * (a // m)\n            a %= m\n        if b >= m:\n   \
@@ -26,8 +29,9 @@ data:
   path: src/math/floor_sum.py
   requiredBy: []
   timestamp: '2023-06-29 01:22:58+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  verificationStatus: LIBRARY_ALL_WA
+  verifiedWith:
+  - src/$tests/math/floor_sum.test.py
 documentation_of: src/math/floor_sum.py
 layout: document
 redirect_from:

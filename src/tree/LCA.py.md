@@ -2,10 +2,16 @@
 data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
-  _extendedVerifiedWith: []
-  _isVerificationFailed: false
+  _extendedVerifiedWith:
+  - icon: ':x:'
+    path: src/$tests/tree/JumoOnTree.test.py
+    title: src/$tests/tree/JumoOnTree.test.py
+  - icon: ':x:'
+    path: src/$tests/tree/LCA.test.py
+    title: src/$tests/tree/LCA.test.py
+  _isVerificationFailed: true
   _pathExtension: py
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':x:'
   attributes:
     links: []
   bundledCode: "Traceback (most recent call last):\n  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/documentation/build.py\"\
@@ -13,7 +19,7 @@ data:
     \ basedir=basedir, options={'include_paths': [basedir]}).decode()\n          \
     \         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\
     \  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/languages/python.py\"\
-    , line 96, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
+    , line 108, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
   code: "class LCA:\n    def __init__(self, n, root=0, edges=None):\n        self.n\
     \ = n\n        self.root = root\n        self.logn = (self.n - 1).bit_length()\n\
     \        if edges is None:\n            self.edges = [[] for _ in range(n)]\n\
@@ -52,8 +58,10 @@ data:
   path: src/tree/LCA.py
   requiredBy: []
   timestamp: '2023-07-07 22:56:19+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  verificationStatus: LIBRARY_ALL_WA
+  verifiedWith:
+  - src/$tests/tree/LCA.test.py
+  - src/$tests/tree/JumoOnTree.test.py
 documentation_of: src/tree/LCA.py
 layout: document
 redirect_from:

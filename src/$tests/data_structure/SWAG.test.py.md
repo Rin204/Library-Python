@@ -1,6 +1,9 @@
 ---
 data:
-  _extendedDependsOn: []
+  _extendedDependsOn:
+  - icon: ':x:'
+    path: src/data_structure/SWAG.py
+    title: src/data_structure/SWAG.py
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: true
@@ -15,7 +18,7 @@ data:
     \ basedir=basedir, options={'include_paths': [basedir]}).decode()\n          \
     \         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\
     \  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/languages/python.py\"\
-    , line 96, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
+    , line 108, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
   code: "# verification-helper: PROBLEM https://judge.yosupo.jp/problem/queue_operate_all_composite\n\
     from pathlib import Path\nimport sys\n\nsys.path.append(str(Path(__file__).resolve().parent.parent.parent.parent))\n\
     from src.data_structure.SWAG import SWAG\n\n\nMOD = 998244353\n\n\ndef ope(l,\
@@ -26,11 +29,12 @@ data:
     \ << 30) | query[2])\n    elif query[0] == 1:\n        swag.pop()\n    else:\n\
     \        res = swag.prod()\n        a = res >> 30\n        b = res ^ (a << 30)\n\
     \        ans = (a * query[1] + b) % MOD\n        print(ans)\n"
-  dependsOn: []
+  dependsOn:
+  - src/data_structure/SWAG.py
   isVerificationFile: true
   path: src/$tests/data_structure/SWAG.test.py
   requiredBy: []
-  timestamp: '1970-01-01 00:00:00+00:00'
+  timestamp: '2023-07-23 08:45:17+09:00'
   verificationStatus: TEST_WRONG_ANSWER
   verifiedWith: []
 documentation_of: src/$tests/data_structure/SWAG.test.py

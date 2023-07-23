@@ -1,11 +1,17 @@
 ---
 data:
   _extendedDependsOn: []
-  _extendedRequiredBy: []
-  _extendedVerifiedWith: []
-  _isVerificationFailed: false
+  _extendedRequiredBy:
+  - icon: ':x:'
+    path: src/polynomial/FormalPowerSeries998.py
+    title: src/polynomial/FormalPowerSeries998.py
+  _extendedVerifiedWith:
+  - icon: ':x:'
+    path: src/$tests/math/cipolla.test.py
+    title: src/$tests/math/cipolla.test.py
+  _isVerificationFailed: true
   _pathExtension: py
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':x:'
   attributes:
     links: []
   bundledCode: "Traceback (most recent call last):\n  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/documentation/build.py\"\
@@ -13,7 +19,7 @@ data:
     \ basedir=basedir, options={'include_paths': [basedir]}).decode()\n          \
     \         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\
     \  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/languages/python.py\"\
-    , line 96, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
+    , line 108, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
   code: "def cipolla(x, MOD):\n    if MOD == 2:\n        return x\n    elif x == 0:\n\
     \        return 0\n    elif pow(x, (MOD - 1) // 2, MOD) != 1:\n        return\
     \ -1\n\n    y = 1\n    while pow((y * y - x) % MOD, (MOD - 1) // 2, MOD) == 1:\n\
@@ -26,10 +32,12 @@ data:
   dependsOn: []
   isVerificationFile: false
   path: src/math/cipolla.py
-  requiredBy: []
+  requiredBy:
+  - src/polynomial/FormalPowerSeries998.py
   timestamp: '2023-07-22 13:02:18+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  verificationStatus: LIBRARY_ALL_WA
+  verifiedWith:
+  - src/$tests/math/cipolla.test.py
 documentation_of: src/math/cipolla.py
 layout: document
 redirect_from:

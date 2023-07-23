@@ -2,10 +2,16 @@
 data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
-  _extendedVerifiedWith: []
-  _isVerificationFailed: false
+  _extendedVerifiedWith:
+  - icon: ':x:'
+    path: src/$tests/tree/HLD.test.py
+    title: src/$tests/tree/HLD.test.py
+  - icon: ':x:'
+    path: src/$tests/tree/HLD_lca.test.py
+    title: src/$tests/tree/HLD_lca.test.py
+  _isVerificationFailed: true
   _pathExtension: py
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':x:'
   attributes:
     links: []
   bundledCode: "Traceback (most recent call last):\n  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/documentation/build.py\"\
@@ -13,7 +19,7 @@ data:
     \ basedir=basedir, options={'include_paths': [basedir]}).decode()\n          \
     \         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\
     \  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/languages/python.py\"\
-    , line 96, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
+    , line 108, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
   code: "class HLD:\n    def __init__(self, n, edges=None):\n        self.n = n\n\
     \        if edges is None:\n            self.edges = [[] for _ in range(n)]\n\
     \        else:\n            self.edges = edges\n            # \u30B3\u30D4\u30FC\
@@ -72,8 +78,10 @@ data:
   path: src/tree/HLD.py
   requiredBy: []
   timestamp: '2023-07-08 17:00:59+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  verificationStatus: LIBRARY_ALL_WA
+  verifiedWith:
+  - src/$tests/tree/HLD.test.py
+  - src/$tests/tree/HLD_lca.test.py
 documentation_of: src/tree/HLD.py
 layout: document
 redirect_from:

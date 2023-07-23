@@ -2,10 +2,16 @@
 data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
-  _extendedVerifiedWith: []
-  _isVerificationFailed: false
+  _extendedVerifiedWith:
+  - icon: ':x:'
+    path: src/$tests/graph/lowlink_bridges.test.py
+    title: src/$tests/graph/lowlink_bridges.test.py
+  - icon: ':x:'
+    path: src/$tests/graph/lowlinlk_artic.test.py
+    title: src/$tests/graph/lowlinlk_artic.test.py
+  _isVerificationFailed: true
   _pathExtension: py
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':x:'
   attributes:
     links: []
   bundledCode: "Traceback (most recent call last):\n  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/documentation/build.py\"\
@@ -13,7 +19,7 @@ data:
     \ basedir=basedir, options={'include_paths': [basedir]}).decode()\n          \
     \         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\
     \  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/languages/python.py\"\
-    , line 96, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
+    , line 108, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
   code: "def lowLink(edges):\n    \"\"\"\n    edges[from] = [to1, to2, ...]\n    \"\
     \"\"\n    n = len(edges)\n    ord = [-1] * n\n    low = [-1] * n\n    isartic\
     \ = [False] * n\n    bridge = []\n\n    def dfs(root, k):\n        x = root *\
@@ -44,8 +50,10 @@ data:
   path: src/graph/lowLink.py
   requiredBy: []
   timestamp: '2023-07-06 22:57:49+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  verificationStatus: LIBRARY_ALL_WA
+  verifiedWith:
+  - src/$tests/graph/lowlinlk_artic.test.py
+  - src/$tests/graph/lowlink_bridges.test.py
 documentation_of: src/graph/lowLink.py
 layout: document
 redirect_from:

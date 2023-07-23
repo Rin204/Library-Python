@@ -1,11 +1,17 @@
 ---
 data:
-  _extendedDependsOn: []
+  _extendedDependsOn:
+  - icon: ':x:'
+    path: src/misc/DeletableHeapq.py
+    title: src/misc/DeletableHeapq.py
   _extendedRequiredBy: []
-  _extendedVerifiedWith: []
-  _isVerificationFailed: false
+  _extendedVerifiedWith:
+  - icon: ':x:'
+    path: src/$tests/misc/MedianHeap.test.py
+    title: src/$tests/misc/MedianHeap.test.py
+  _isVerificationFailed: true
   _pathExtension: py
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':x:'
   attributes:
     links: []
   bundledCode: "Traceback (most recent call last):\n  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/documentation/build.py\"\
@@ -13,7 +19,7 @@ data:
     \ basedir=basedir, options={'include_paths': [basedir]}).decode()\n          \
     \         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\
     \  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/languages/python.py\"\
-    , line 96, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
+    , line 108, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
   code: "from src.misc.DeletableHeapq import DeletableHeapq\n\n\nclass MedianHeap:\n\
     \    def __init__(self, A=None):\n        self.upp = DeletableHeapq()\n      \
     \  self.low = DeletableHeapq(reverse=True)\n\n        if A is not None:\n    \
@@ -33,13 +39,15 @@ data:
     \     if len(self) == 0:\n            return 0\n\n        med = self.upp[0]\n\
     \        ret = med * len(self.low) - self.low.tot\n        ret += self.upp.tot\
     \ - med * len(self.upp)\n        return ret\n"
-  dependsOn: []
+  dependsOn:
+  - src/misc/DeletableHeapq.py
   isVerificationFile: false
   path: src/misc/MadianHeap.py
   requiredBy: []
-  timestamp: '1970-01-01 00:00:00+00:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  timestamp: '2023-07-16 15:47:36+09:00'
+  verificationStatus: LIBRARY_ALL_WA
+  verifiedWith:
+  - src/$tests/misc/MedianHeap.test.py
 documentation_of: src/misc/MadianHeap.py
 layout: document
 redirect_from:

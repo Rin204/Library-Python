@@ -1,6 +1,9 @@
 ---
 data:
-  _extendedDependsOn: []
+  _extendedDependsOn:
+  - icon: ':x:'
+    path: src/graph/lowLink.py
+    title: src/graph/lowLink.py
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: true
@@ -15,7 +18,7 @@ data:
     \ basedir=basedir, options={'include_paths': [basedir]}).decode()\n          \
     \         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\
     \  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/languages/python.py\"\
-    , line 96, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
+    , line 108, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
   code: "# verification-helper: PROBLEM https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=GRL_3_B&lang=ja\n\
     from pathlib import Path\nimport sys\n\nsys.path.append(str(Path(__file__).resolve().parent.parent.parent.parent))\n\
     from src.graph.lowLink import lowLink\n\n\nn, m = map(int, input().split())\n\
@@ -23,11 +26,12 @@ data:
     \    edges[a].append(b)\n    edges[b].append(a)\n\n_, bridges = lowLink(edges)\n\
     bridges.sort(key=lambda x: x[0] * n + x[1])\nfor u, v in bridges:\n    print(u,\
     \ v)\n"
-  dependsOn: []
+  dependsOn:
+  - src/graph/lowLink.py
   isVerificationFile: true
   path: src/$tests/graph/lowlink_bridges.test.py
   requiredBy: []
-  timestamp: '1970-01-01 00:00:00+00:00'
+  timestamp: '2023-07-23 08:45:17+09:00'
   verificationStatus: TEST_WRONG_ANSWER
   verifiedWith: []
 documentation_of: src/$tests/graph/lowlink_bridges.test.py

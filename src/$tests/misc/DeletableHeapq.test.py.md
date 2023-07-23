@@ -1,6 +1,12 @@
 ---
 data:
-  _extendedDependsOn: []
+  _extendedDependsOn:
+  - icon: ':x:'
+    path: src/data_structure/BIT.py
+    title: src/data_structure/BIT.py
+  - icon: ':x:'
+    path: src/misc/DeletableHeapq.py
+    title: src/misc/DeletableHeapq.py
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: true
@@ -15,7 +21,7 @@ data:
     \ basedir=basedir, options={'include_paths': [basedir]}).decode()\n          \
     \         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\
     \  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/languages/python.py\"\
-    , line 96, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
+    , line 108, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
   code: "# verification-helper: PROBLEM https://judge.yosupo.jp/problem/aplusb\nfrom\
     \ pathlib import Path\nimport sys\n\nsys.path.append(str(Path(__file__).resolve().parent.parent.parent.parent))\n\
     from src.data_structure.BIT import BIT\nfrom src.misc.DeletableHeapq import DeletableHeapq\n\
@@ -32,11 +38,13 @@ data:
     \            bit.add(p, -1)\n            assert hq.remove(p)\n            cnt\
     \ -= 1\n            tot -= p\n\n    assert len(hq) == cnt\n    assert hq.tot ==\
     \ tot, (_, hq.tot, tot)\n\n\na, b = map(int, input().split())\nprint(a + b)\n"
-  dependsOn: []
+  dependsOn:
+  - src/data_structure/BIT.py
+  - src/misc/DeletableHeapq.py
   isVerificationFile: true
   path: src/$tests/misc/DeletableHeapq.test.py
   requiredBy: []
-  timestamp: '1970-01-01 00:00:00+00:00'
+  timestamp: '2023-07-23 08:45:17+09:00'
   verificationStatus: TEST_WRONG_ANSWER
   verifiedWith: []
 documentation_of: src/$tests/misc/DeletableHeapq.test.py

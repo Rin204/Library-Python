@@ -1,6 +1,12 @@
 ---
 data:
-  _extendedDependsOn: []
+  _extendedDependsOn:
+  - icon: ':x:'
+    path: src/data_structure/BIT.py
+    title: src/data_structure/BIT.py
+  - icon: ':x:'
+    path: src/tree/CentroidDecomposition.py
+    title: src/tree/CentroidDecomposition.py
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: true
@@ -15,7 +21,7 @@ data:
     \ basedir=basedir, options={'include_paths': [basedir]}).decode()\n          \
     \         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\
     \  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/languages/python.py\"\
-    , line 96, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
+    , line 108, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
   code: "# verification-helper: PROBLEM https://yukicoder.me/problems/no/1038\nfrom\
     \ pathlib import Path\nimport sys\n\nsys.path.append(str(Path(__file__).resolve().parent.parent.parent.parent))\n\
     \n## yukicoder \u306E\u30AA\u30F3\u30E9\u30A4\u30F3\u5B9F\u884C\u3060\u3068TL\u306B\
@@ -38,11 +44,13 @@ data:
     \ + 1)\n        bg = g\n\n    return ret\n\n\nout = []\nfor _ in range(Q):\n \
     \   x, y, z = map(int, input().split())\n    x -= 1\n    out.append(get(x))\n\
     \    add(x, y, z)\n\nprint(*out, sep=\"\\n\")\n"
-  dependsOn: []
+  dependsOn:
+  - src/data_structure/BIT.py
+  - src/tree/CentroidDecomposition.py
   isVerificationFile: true
   path: src/$tests/tree/CentroidDecomposition.test.py
   requiredBy: []
-  timestamp: '1970-01-01 00:00:00+00:00'
+  timestamp: '2023-07-23 08:45:17+09:00'
   verificationStatus: TEST_WRONG_ANSWER
   verifiedWith: []
 documentation_of: src/$tests/tree/CentroidDecomposition.test.py

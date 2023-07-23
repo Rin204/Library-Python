@@ -5,10 +5,19 @@ data:
   - icon: ':warning:'
     path: src/data_structure/segtree_/PointAddRangeSum.py
     title: src/data_structure/segtree_/PointAddRangeSum.py
-  _extendedVerifiedWith: []
-  _isVerificationFailed: false
+  _extendedVerifiedWith:
+  - icon: ':x:'
+    path: src/$tests/data_structure/segtree2.test.py
+    title: src/$tests/data_structure/segtree2.test.py
+  - icon: ':x:'
+    path: src/$tests/data_structure/segtree3.test.py
+    title: src/$tests/data_structure/segtree3.test.py
+  - icon: ':x:'
+    path: src/$tests/data_structure/segtree_bisect2.test.py
+    title: src/$tests/data_structure/segtree_bisect2.test.py
+  _isVerificationFailed: true
   _pathExtension: py
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':x:'
   attributes:
     links: []
   bundledCode: "Traceback (most recent call last):\n  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/documentation/build.py\"\
@@ -16,7 +25,7 @@ data:
     \ basedir=basedir, options={'include_paths': [basedir]}).decode()\n          \
     \         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\
     \  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/languages/python.py\"\
-    , line 96, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
+    , line 108, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
   code: "class SegmentTreeBase_:\n    def ope(self, l, r):\n        return None\n\n\
     \    def e(self):\n        return None\n\n    def __init__(self, n, init=None):\n\
     \        self.n = n\n        self.n0 = 1 << (n - 1).bit_length()\n        self.data\
@@ -58,8 +67,11 @@ data:
   requiredBy:
   - src/data_structure/segtree_/PointAddRangeSum.py
   timestamp: '2023-06-13 02:09:25+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  verificationStatus: LIBRARY_ALL_WA
+  verifiedWith:
+  - src/$tests/data_structure/segtree_bisect2.test.py
+  - src/$tests/data_structure/segtree3.test.py
+  - src/$tests/data_structure/segtree2.test.py
 documentation_of: src/data_structure/SegmentTreeBase_.py
 layout: document
 redirect_from:

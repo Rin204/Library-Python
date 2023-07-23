@@ -1,6 +1,9 @@
 ---
 data:
-  _extendedDependsOn: []
+  _extendedDependsOn:
+  - icon: ':x:'
+    path: src/convolution/or_convolution.py
+    title: src/convolution/or_convolution.py
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: true
@@ -15,7 +18,7 @@ data:
     \ basedir=basedir, options={'include_paths': [basedir]}).decode()\n          \
     \         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\
     \  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/languages/python.py\"\
-    , line 96, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
+    , line 108, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
   code: "# verification-helper: PROBLEM https://judge.yosupo.jp/problem/bitwise_and_convolution\n\
     from pathlib import Path\nimport sys\n\nsys.path.append(str(Path(__file__).resolve().parent.parent.parent.parent))\n\
     from src.convolution.or_convolution import or_convolution\n\n\nn = int(input())\n\
@@ -24,11 +27,12 @@ data:
     \ n):\n    A_[i ^ mask] = A[i]\n    B_[i ^ mask] = B[i]\nC_ = or_convolution(A_,\
     \ B_, 998244353)\nC = [0] * (1 << n)\nfor i in range(1 << n):\n    C[i ^ mask]\
     \ = C_[i]\nprint(*C)\n"
-  dependsOn: []
+  dependsOn:
+  - src/convolution/or_convolution.py
   isVerificationFile: true
   path: src/$tests/convolution/or_convolution.test.py
   requiredBy: []
-  timestamp: '1970-01-01 00:00:00+00:00'
+  timestamp: '2023-07-23 08:45:17+09:00'
   verificationStatus: TEST_WRONG_ANSWER
   verifiedWith: []
 documentation_of: src/$tests/convolution/or_convolution.test.py

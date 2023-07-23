@@ -1,11 +1,20 @@
 ---
 data:
   _extendedDependsOn: []
-  _extendedRequiredBy: []
-  _extendedVerifiedWith: []
-  _isVerificationFailed: false
+  _extendedRequiredBy:
+  - icon: ':x:'
+    path: src/polynomial/FormalPowerSeries998.py
+    title: src/polynomial/FormalPowerSeries998.py
+  _extendedVerifiedWith:
+  - icon: ':x:'
+    path: src/$tests/math/Catalan.test.py
+    title: src/$tests/math/Catalan.test.py
+  - icon: ':x:'
+    path: src/$tests/math/Combination.test.py
+    title: src/$tests/math/Combination.test.py
+  _isVerificationFailed: true
   _pathExtension: py
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':x:'
   attributes:
     links: []
   bundledCode: "Traceback (most recent call last):\n  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/documentation/build.py\"\
@@ -13,7 +22,7 @@ data:
     \ basedir=basedir, options={'include_paths': [basedir]}).decode()\n          \
     \         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\
     \  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/languages/python.py\"\
-    , line 96, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
+    , line 108, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
   code: "class Combination:\n    def __init__(self, n, MOD=998244353):\n        self.fact\
     \ = [1] * (n + 1)\n        self.invfact = [1] * (n + 1)\n        self.MOD = MOD\n\
     \        for i in range(1, n + 1):\n            self.fact[i] = self.fact[i - 1]\
@@ -37,10 +46,13 @@ data:
   dependsOn: []
   isVerificationFile: false
   path: src/math/Combination.py
-  requiredBy: []
+  requiredBy:
+  - src/polynomial/FormalPowerSeries998.py
   timestamp: '2023-06-29 01:22:58+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  verificationStatus: LIBRARY_ALL_WA
+  verifiedWith:
+  - src/$tests/math/Combination.test.py
+  - src/$tests/math/Catalan.test.py
 documentation_of: src/math/Combination.py
 layout: document
 redirect_from:

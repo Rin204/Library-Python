@@ -1,11 +1,17 @@
 ---
 data:
-  _extendedDependsOn: []
+  _extendedDependsOn:
+  - icon: ':x:'
+    path: src/convolution/NTT998.py
+    title: src/convolution/NTT998.py
   _extendedRequiredBy: []
-  _extendedVerifiedWith: []
-  _isVerificationFailed: false
+  _extendedVerifiedWith:
+  - icon: ':x:'
+    path: src/$tests/string/wildcard_mathing.test.py
+    title: src/$tests/string/wildcard_mathing.test.py
+  _isVerificationFailed: true
   _pathExtension: py
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':x:'
   attributes:
     links: []
   bundledCode: "Traceback (most recent call last):\n  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/documentation/build.py\"\
@@ -13,7 +19,7 @@ data:
     \ basedir=basedir, options={'include_paths': [basedir]}).decode()\n          \
     \         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\
     \  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/languages/python.py\"\
-    , line 96, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
+    , line 108, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
   code: "import random\n\nfrom src.convolution.NTT998 import NTT998\n\n\ndef wildcard_matching(S,\
     \ T, wild=\"?\"):\n    n = len(S)\n    m = len(T)\n    A = [0] * n\n    B = [0]\
     \ * m\n    dic = {wild: 0}\n    for i, s in enumerate(S):\n        if s not in\
@@ -29,13 +35,15 @@ data:
     \ = NTT998.multiply(S1, T3)\n    res = []\n    for i in range(n - m + 1):\n  \
     \      x = res1[i + m - 1] - 2 * res2[i + m - 1] + res3[i + m - 1]\n        if\
     \ x == 0:\n            res.append(i)\n\n    return res\n"
-  dependsOn: []
+  dependsOn:
+  - src/convolution/NTT998.py
   isVerificationFile: false
   path: src/string/wildcard_mathing.py
   requiredBy: []
-  timestamp: '1970-01-01 00:00:00+00:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  timestamp: '2023-07-17 18:11:17+09:00'
+  verificationStatus: LIBRARY_ALL_WA
+  verifiedWith:
+  - src/$tests/string/wildcard_mathing.test.py
 documentation_of: src/string/wildcard_mathing.py
 layout: document
 redirect_from:

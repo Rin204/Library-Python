@@ -1,6 +1,9 @@
 ---
 data:
-  _extendedDependsOn: []
+  _extendedDependsOn:
+  - icon: ':x:'
+    path: src/polynomial/berlekamp_massey_global_mod.py
+    title: src/polynomial/berlekamp_massey_global_mod.py
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: true
@@ -15,17 +18,18 @@ data:
     \ basedir=basedir, options={'include_paths': [basedir]}).decode()\n          \
     \         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\
     \  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/languages/python.py\"\
-    , line 96, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
+    , line 108, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
   code: "# verification-helper: PROBLEM https://judge.yosupo.jp/problem/find_linear_recurrence\n\
     from pathlib import Path\nimport sys\n\nsys.path.append(str(Path(__file__).resolve().parent.parent.parent.parent))\n\
     from src.polynomial.berlekamp_massey_global_mod import berlekamp_massey_global_mod\n\
     \n\nn = int(input())\nif n == 0:\n    A = []\nelse:\n    A = list(map(int, input().split()))\n\
     C = berlekamp_massey_global_mod(A)\nprint(len(C))\nprint(*C)\n"
-  dependsOn: []
+  dependsOn:
+  - src/polynomial/berlekamp_massey_global_mod.py
   isVerificationFile: true
   path: src/$tests/polynomial/berlekamp_massey_global_mod.test.py
   requiredBy: []
-  timestamp: '1970-01-01 00:00:00+00:00'
+  timestamp: '2023-07-23 08:45:17+09:00'
   verificationStatus: TEST_WRONG_ANSWER
   verifiedWith: []
 documentation_of: src/$tests/polynomial/berlekamp_massey_global_mod.test.py

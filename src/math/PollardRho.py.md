@@ -1,17 +1,20 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':warning:'
+  - icon: ':x:'
     path: src/math/MillerRabin.py
     title: src/math/MillerRabin.py
   _extendedRequiredBy:
-  - icon: ':warning:'
+  - icon: ':x:'
     path: src/math/CombinationArbitrary.py
     title: src/math/CombinationArbitrary.py
-  _extendedVerifiedWith: []
-  _isVerificationFailed: false
+  _extendedVerifiedWith:
+  - icon: ':x:'
+    path: src/$tests/math/Pollard_Rho.test.py
+    title: src/$tests/math/Pollard_Rho.test.py
+  _isVerificationFailed: true
   _pathExtension: py
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':x:'
   attributes:
     links:
     - https://qiita.com/t_fuki/items/7cd50de54d3c5d063b4a
@@ -20,7 +23,7 @@ data:
     \ basedir=basedir, options={'include_paths': [basedir]}).decode()\n          \
     \         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\
     \  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/languages/python.py\"\
-    , line 96, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
+    , line 108, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
   code: "from math import gcd\n\nfrom src.math.MillerRabin import MillerRabin\n\n\n\
     def pollard(n):\n    # https://qiita.com/t_fuki/items/7cd50de54d3c5d063b4a\n\n\
     \    if n % 2 == 0:\n        return 2\n\n    m = int(n**0.125) + 1\n    step =\
@@ -48,8 +51,9 @@ data:
   requiredBy:
   - src/math/CombinationArbitrary.py
   timestamp: '2023-06-10 16:58:06+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  verificationStatus: LIBRARY_ALL_WA
+  verifiedWith:
+  - src/$tests/math/Pollard_Rho.test.py
 documentation_of: src/math/PollardRho.py
 layout: document
 redirect_from:

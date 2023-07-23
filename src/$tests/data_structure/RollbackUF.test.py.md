@@ -1,6 +1,9 @@
 ---
 data:
-  _extendedDependsOn: []
+  _extendedDependsOn:
+  - icon: ':x:'
+    path: src/data_structure/RollbackUnionFind.py
+    title: src/data_structure/RollbackUnionFind.py
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: true
@@ -15,7 +18,7 @@ data:
     \ basedir=basedir, options={'include_paths': [basedir]}).decode()\n          \
     \         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\
     \  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/languages/python.py\"\
-    , line 96, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
+    , line 108, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
   code: "# verification-helper: PROBLEM https://yukicoder.me/problems/no/1293\nfrom\
     \ pathlib import Path\nimport sys\n\nsys.path.append(str(Path(__file__).resolve().parent.parent.parent.parent))\n\
     from src.data_structure.RollbackUnionFind import RollbackUnionFind\n\n\nn, d,\
@@ -27,11 +30,12 @@ data:
     \ in dic.values():\n    u = group[0]\n    state = UF2.get_state()\n    for v in\
     \ group:\n        UF2.unite(u, v)\n    ans += UF1.size(u) * UF2.size(u)\n    UF2.rollback(state)\n\
     \nprint(ans)\n"
-  dependsOn: []
+  dependsOn:
+  - src/data_structure/RollbackUnionFind.py
   isVerificationFile: true
   path: src/$tests/data_structure/RollbackUF.test.py
   requiredBy: []
-  timestamp: '1970-01-01 00:00:00+00:00'
+  timestamp: '2023-07-23 08:45:17+09:00'
   verificationStatus: TEST_WRONG_ANSWER
   verifiedWith: []
 documentation_of: src/$tests/data_structure/RollbackUF.test.py

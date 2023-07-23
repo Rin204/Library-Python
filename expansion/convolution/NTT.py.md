@@ -13,7 +13,7 @@ data:
     \ basedir=basedir, options={'include_paths': [basedir]}).decode()\n          \
     \         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\
     \  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/languages/python.py\"\
-    , line 96, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
+    , line 108, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
   code: "class NTT:\n    def __init__(self, MOD=998244353):\n        self.MOD = MOD\n\
     \        self.make_info(MOD)\n\n    def make_info(self, MOD):\n        g = self.primitive_root(MOD)\n\
     \        m = MOD - 1\n        rank2 = (m & -m).bit_length() - 1\n        root\

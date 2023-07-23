@@ -13,7 +13,7 @@ data:
     \ basedir=basedir, options={'include_paths': [basedir]}).decode()\n          \
     \         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\
     \  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/languages/python.py\"\
-    , line 96, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
+    , line 108, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
   code: "import os\nimport sys\nfrom io import BytesIO, IOBase\n\nBUFSIZE = 8192\n\
     \n\nclass FastIO(IOBase):\n    newlines = 0\n\n    def __init__(self, file):\n\
     \        self._fd = file.fileno()\n        self.buffer = BytesIO()\n        self.writable\
@@ -40,7 +40,7 @@ data:
   isVerificationFile: false
   path: src/misc/FastIO.py
   requiredBy: []
-  timestamp: '1970-01-01 00:00:00+00:00'
+  timestamp: '2023-06-10 17:32:53+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: src/misc/FastIO.py

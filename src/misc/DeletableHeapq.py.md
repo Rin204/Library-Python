@@ -1,11 +1,20 @@
 ---
 data:
   _extendedDependsOn: []
-  _extendedRequiredBy: []
-  _extendedVerifiedWith: []
-  _isVerificationFailed: false
+  _extendedRequiredBy:
+  - icon: ':x:'
+    path: src/misc/MadianHeap.py
+    title: src/misc/MadianHeap.py
+  - icon: ':x:'
+    path: src/misc/TopKHeap.py
+    title: src/misc/TopKHeap.py
+  _extendedVerifiedWith:
+  - icon: ':x:'
+    path: src/$tests/misc/DeletableHeapq.test.py
+    title: src/$tests/misc/DeletableHeapq.test.py
+  _isVerificationFailed: true
   _pathExtension: py
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':x:'
   attributes:
     links: []
   bundledCode: "Traceback (most recent call last):\n  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/documentation/build.py\"\
@@ -13,7 +22,7 @@ data:
     \ basedir=basedir, options={'include_paths': [basedir]}).decode()\n          \
     \         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\
     \  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/languages/python.py\"\
-    , line 96, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
+    , line 108, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
   code: "import heapq\n\n\nclass DeletableHeapq:\n    def __init__(self, lst=None,\
     \ reverse=False):\n        if reverse:\n            self.pm = -1\n        else:\n\
     \            self.pm = 1\n        if lst is None:\n            self.hq = []\n\
@@ -40,10 +49,13 @@ data:
   dependsOn: []
   isVerificationFile: false
   path: src/misc/DeletableHeapq.py
-  requiredBy: []
-  timestamp: '1970-01-01 00:00:00+00:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  requiredBy:
+  - src/misc/TopKHeap.py
+  - src/misc/MadianHeap.py
+  timestamp: '2023-06-29 01:22:58+09:00'
+  verificationStatus: LIBRARY_ALL_WA
+  verifiedWith:
+  - src/$tests/misc/DeletableHeapq.test.py
 documentation_of: src/misc/DeletableHeapq.py
 layout: document
 redirect_from:

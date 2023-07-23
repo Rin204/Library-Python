@@ -2,10 +2,16 @@
 data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
-  _extendedVerifiedWith: []
-  _isVerificationFailed: false
+  _extendedVerifiedWith:
+  - icon: ':x:'
+    path: src/$tests/string/lcp_array.test.py
+    title: src/$tests/string/lcp_array.test.py
+  - icon: ':x:'
+    path: src/$tests/string/suffix_array.test.py
+    title: src/$tests/string/suffix_array.test.py
+  _isVerificationFailed: true
   _pathExtension: py
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':x:'
   attributes:
     links: []
   bundledCode: "Traceback (most recent call last):\n  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/documentation/build.py\"\
@@ -13,7 +19,7 @@ data:
     \ basedir=basedir, options={'include_paths': [basedir]}).decode()\n          \
     \         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\
     \  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/languages/python.py\"\
-    , line 96, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
+    , line 108, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
   code: "from functools import cmp_to_key\n\n\ndef sa_naive(S):\n    n = len(S)\n\
     \    sa = [i for i in range(n)]\n\n    def cmp(l, r):\n        if l == r:\n  \
     \          return 0\n        while l < n and r < n:\n            if S[l] != S[r]:\n\
@@ -78,9 +84,11 @@ data:
   isVerificationFile: false
   path: src/string/suffix_array.py
   requiredBy: []
-  timestamp: '1970-01-01 00:00:00+00:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  timestamp: '2023-07-09 20:12:03+09:00'
+  verificationStatus: LIBRARY_ALL_WA
+  verifiedWith:
+  - src/$tests/string/lcp_array.test.py
+  - src/$tests/string/suffix_array.test.py
 documentation_of: src/string/suffix_array.py
 layout: document
 redirect_from:

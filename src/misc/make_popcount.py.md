@@ -13,7 +13,7 @@ data:
     \ basedir=basedir, options={'include_paths': [basedir]}).decode()\n          \
     \         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\
     \  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/languages/python.py\"\
-    , line 96, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
+    , line 108, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
   code: "def make_popcount(n):\n    print(\"def popcount(x):\")\n    le = 1\n    while\
     \ le < n:\n        le *= 2\n    five = \"5\" * n\n    print(f\"    x = (x & 0x{five})\
     \ + ((x >> 1) & 0x{five})\")\n    three = \"3\" * n\n    print(f\"    x = (x &\

@@ -1,7 +1,7 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':warning:'
+  - icon: ':x:'
     path: src/data_structure/SegmentTreeBase_.py
     title: src/data_structure/SegmentTreeBase_.py
   _extendedRequiredBy: []
@@ -16,7 +16,7 @@ data:
     \ basedir=basedir, options={'include_paths': [basedir]}).decode()\n          \
     \         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\
     \  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/languages/python.py\"\
-    , line 96, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
+    , line 108, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
   code: "from src.data_structure.SegmentTreeBase_ import SegmentTreeBase_\n\n\nclass\
     \ PointAddRangeSum(SegmentTreeBase_):\n    def ope(self, l, r):\n        return\
     \ l + r\n\n    def e(self):\n        return 0\n"

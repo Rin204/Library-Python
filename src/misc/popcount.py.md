@@ -1,7 +1,10 @@
 ---
 data:
   _extendedDependsOn: []
-  _extendedRequiredBy: []
+  _extendedRequiredBy:
+  - icon: ':x:'
+    path: src/misc/Bitset.py
+    title: src/misc/Bitset.py
   _extendedVerifiedWith: []
   _isVerificationFailed: false
   _pathExtension: py
@@ -13,7 +16,7 @@ data:
     \ basedir=basedir, options={'include_paths': [basedir]}).decode()\n          \
     \         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\
     \  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/languages/python.py\"\
-    , line 96, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
+    , line 108, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
   code: "def popcount32(x):\n    x = x - ((x >> 1) & 0x55555555)\n    x = (x & 0x33333333)\
     \ + ((x >> 2) & 0x33333333)\n    x = (x + (x >> 4)) & 0x0F0F0F0F\n    x += x >>\
     \ 8\n    x += x >> 16\n    return x & 0x0000003F\n\n\ndef popcount64(x):\n   \
@@ -26,7 +29,8 @@ data:
   dependsOn: []
   isVerificationFile: false
   path: src/misc/popcount.py
-  requiredBy: []
+  requiredBy:
+  - src/misc/Bitset.py
   timestamp: '2023-06-29 01:22:58+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []

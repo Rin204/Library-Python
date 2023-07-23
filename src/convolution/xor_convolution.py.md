@@ -2,10 +2,13 @@
 data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
-  _extendedVerifiedWith: []
-  _isVerificationFailed: false
+  _extendedVerifiedWith:
+  - icon: ':x:'
+    path: src/$tests/convolution/xor_convolution.test.py
+    title: src/$tests/convolution/xor_convolution.test.py
+  _isVerificationFailed: true
   _pathExtension: py
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':x:'
   attributes:
     links: []
   bundledCode: "Traceback (most recent call last):\n  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/documentation/build.py\"\
@@ -13,7 +16,7 @@ data:
     \ basedir=basedir, options={'include_paths': [basedir]}).decode()\n          \
     \         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\
     \  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/languages/python.py\"\
-    , line 96, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
+    , line 108, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
   code: "def xor_convolution(A, B, MOD=-1):\n    \"\"\"\n    MOD \u304C\u5076\u6570\
     \u3060\u3068\u58CA\u308C\u308B\n    MOD = -1 \u3067\u6574\u6570\u6307\u5B9A\u306E\
     \u5834\u5408\uFF0Creturn \u306E\u76F4\u524D\u306E\u3068\u3053\u308D\u3092\u5207\
@@ -33,8 +36,9 @@ data:
   path: src/convolution/xor_convolution.py
   requiredBy: []
   timestamp: '2023-07-16 16:38:14+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  verificationStatus: LIBRARY_ALL_WA
+  verifiedWith:
+  - src/$tests/convolution/xor_convolution.test.py
 documentation_of: src/convolution/xor_convolution.py
 layout: document
 redirect_from:

@@ -1,20 +1,23 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':warning:'
+  - icon: ':x:'
     path: src/math/Garner.py
     title: src/math/Garner.py
-  - icon: ':warning:'
+  - icon: ':x:'
     path: src/math/PollardRho.py
     title: src/math/PollardRho.py
   - icon: ':warning:'
     path: src/math/modinv.py
     title: src/math/modinv.py
   _extendedRequiredBy: []
-  _extendedVerifiedWith: []
-  _isVerificationFailed: false
+  _extendedVerifiedWith:
+  - icon: ':x:'
+    path: src/$tests/math/Combination_Arbitrary.test.py
+    title: src/$tests/math/Combination_Arbitrary.test.py
+  _isVerificationFailed: true
   _pathExtension: py
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':x:'
   attributes:
     links: []
   bundledCode: "Traceback (most recent call last):\n  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/documentation/build.py\"\
@@ -22,7 +25,7 @@ data:
     \ basedir=basedir, options={'include_paths': [basedir]}).decode()\n          \
     \         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\
     \  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/languages/python.py\"\
-    , line 96, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
+    , line 108, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
   code: "from src.math.modinv import modinv\nfrom src.math.PollardRho import primedict\n\
     from src.math.Garner import Garner\n\n\nclass CombinationPrimePowerMOD:\n    def\
     \ __init__(self, p, e, m=-1):\n        self.p = p\n        self.e = e\n      \
@@ -52,15 +55,16 @@ data:
     \           return 0\n\n        if self.MOD == 1:\n            return 0\n\n  \
     \      R = [pr.nCk(n, k) for pr in self.prime_nCk]\n        return Garner(R, self.M)[0]\n"
   dependsOn:
-  - src/math/Garner.py
   - src/math/modinv.py
+  - src/math/Garner.py
   - src/math/PollardRho.py
   isVerificationFile: false
   path: src/math/CombinationArbitrary.py
   requiredBy: []
   timestamp: '2023-07-09 17:47:05+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  verificationStatus: LIBRARY_ALL_WA
+  verifiedWith:
+  - src/$tests/math/Combination_Arbitrary.test.py
 documentation_of: src/math/CombinationArbitrary.py
 layout: document
 redirect_from:

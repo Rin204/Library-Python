@@ -13,7 +13,7 @@ data:
     \ basedir=basedir, options={'include_paths': [basedir]}).decode()\n          \
     \         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\
     \  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/languages/python.py\"\
-    , line 96, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
+    , line 108, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
   code: "def xor_convolution(A, B, MOD=-1):\n    \"\"\"\n    MOD \u304C\u5076\u6570\
     \u3060\u3068\u58CA\u308C\u308B\n    MOD = -1 \u3067\u6574\u6570\u6307\u5B9A\u306E\
     \u5834\u5408\uFF0Creturn \u306E\u76F4\u524D\u306E\u3068\u3053\u308D\u3092\u5207\

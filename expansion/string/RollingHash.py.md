@@ -13,7 +13,7 @@ data:
     \ basedir=basedir, options={'include_paths': [basedir]}).decode()\n          \
     \         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\
     \  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/languages/python.py\"\
-    , line 96, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
+    , line 108, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
   code: "import random\n\n\nclass RollingHash:\n    mask30 = (1 << 30) - 1\n    mask31\
     \ = (1 << 31) - 1\n    MOD = (1 << 61) - 1\n    Base = None\n    pw = [1]\n\n\
     \    def __init__(self, S):\n        if RollingHash.Base is None:\n          \
@@ -36,7 +36,7 @@ data:
   isVerificationFile: false
   path: expansion/string/RollingHash.py
   requiredBy: []
-  timestamp: '1970-01-01 00:00:00+00:00'
+  timestamp: '2023-06-10 17:33:06+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: expansion/string/RollingHash.py

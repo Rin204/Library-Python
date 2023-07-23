@@ -13,7 +13,7 @@ data:
     \ basedir=basedir, options={'include_paths': [basedir]}).decode()\n          \
     \         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\
     \  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/languages/python.py\"\
-    , line 96, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
+    , line 108, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
   code: "def cipolla(x, MOD):\n    if MOD == 2:\n        return x\n    elif x == 0:\n\
     \        return 0\n    elif pow(x, (MOD - 1) // 2, MOD) != 1:\n        return\
     \ -1\n\n    y = 1\n    while pow((y * y - x) % MOD, (MOD - 1) // 2, MOD) == 1:\n\

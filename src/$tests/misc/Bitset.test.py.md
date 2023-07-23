@@ -1,6 +1,9 @@
 ---
 data:
-  _extendedDependsOn: []
+  _extendedDependsOn:
+  - icon: ':x:'
+    path: src/misc/Bitset.py
+    title: src/misc/Bitset.py
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: true
@@ -15,7 +18,7 @@ data:
     \ basedir=basedir, options={'include_paths': [basedir]}).decode()\n          \
     \         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\
     \  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/languages/python.py\"\
-    , line 96, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
+    , line 108, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
   code: "# verification-helper: PROBLEM https://yukicoder.me/problems/no/1861\nfrom\
     \ pathlib import Path\nimport sys\n\nsys.path.append(str(Path(__file__).resolve().parent.parent.parent.parent))\n\
     from src.misc.Bitset import Bitset\nfrom copy import deepcopy\n\nn, k = map(int,\
@@ -28,11 +31,12 @@ data:
     \ % B]) == 0:\n        ans += 1\n    if i % B == 0:\n        p = (i - 1) // B\n\
     \        dp2 = [dp[p]]\n        for j in range(B * p, B * (p + 1) - 1):\n    \
     \        dp2.append(dp2[-1] | (dp2[-1] << A[j]))\n    bit |= bit >> A[i]\n\nprint(ans)\n"
-  dependsOn: []
+  dependsOn:
+  - src/misc/Bitset.py
   isVerificationFile: true
   path: src/$tests/misc/Bitset.test.py
   requiredBy: []
-  timestamp: '1970-01-01 00:00:00+00:00'
+  timestamp: '2023-07-23 08:45:17+09:00'
   verificationStatus: TEST_WRONG_ANSWER
   verifiedWith: []
 documentation_of: src/$tests/misc/Bitset.test.py

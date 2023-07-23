@@ -2,10 +2,13 @@
 data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
-  _extendedVerifiedWith: []
-  _isVerificationFailed: false
+  _extendedVerifiedWith:
+  - icon: ':x:'
+    path: src/$tests/graph/bellmanFord.test.py
+    title: src/$tests/graph/bellmanFord.test.py
+  _isVerificationFailed: true
   _pathExtension: py
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':x:'
   attributes:
     links: []
   bundledCode: "Traceback (most recent call last):\n  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/documentation/build.py\"\
@@ -13,7 +16,7 @@ data:
     \ basedir=basedir, options={'include_paths': [basedir]}).decode()\n          \
     \         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\
     \  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/languages/python.py\"\
-    , line 96, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
+    , line 108, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
   code: "def bellmanFord(n, edges, s, inf=1 << 60):\n    \"\"\"\n    edges = [(from1,\
     \ to1, cost1), (from2, to2, cost2), ...)]\n    \"\"\"\n    dist = [inf] * n\n\
     \    dist[s] = 0\n\n    for _ in range(n):\n        update = False\n        for\
@@ -25,8 +28,9 @@ data:
   path: src/graph/bellmanFord.py
   requiredBy: []
   timestamp: '2023-07-06 22:40:04+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  verificationStatus: LIBRARY_ALL_WA
+  verifiedWith:
+  - src/$tests/graph/bellmanFord.test.py
 documentation_of: src/graph/bellmanFord.py
 layout: document
 redirect_from:

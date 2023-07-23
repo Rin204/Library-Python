@@ -13,7 +13,7 @@ data:
     \ basedir=basedir, options={'include_paths': [basedir]}).decode()\n          \
     \         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\
     \  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/languages/python.py\"\
-    , line 96, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
+    , line 108, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
   code: "import random\n\n\nclass NTT998:\n    # fmt: off\n    rate2=(0, 911660635,\
     \ 509520358, 369330050, 332049552, 983190778, 123842337, 238493703, 975955924,\
     \ 603855026, 856644456, 131300601, 842657263, 730768835, 942482514, 806263778,\
@@ -102,7 +102,7 @@ data:
   isVerificationFile: false
   path: expansion/string/wildcard_mathing.py
   requiredBy: []
-  timestamp: '1970-01-01 00:00:00+00:00'
+  timestamp: '2023-07-17 18:11:17+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: expansion/string/wildcard_mathing.py
