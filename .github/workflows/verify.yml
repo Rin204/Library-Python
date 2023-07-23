@@ -20,7 +20,9 @@ jobs:
       run: pip3 install -U online-judge-verify-helper
 
     - name: Copy dependencies
-      run: cp -r ./.github/oj-verify/ /opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/
+      run: |
+        rm -rf /opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify
+        cp -r ./.github/oj-verify /opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify
 
     - name: run verify
       env:
