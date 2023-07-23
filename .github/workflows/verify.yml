@@ -19,6 +19,9 @@ jobs:
     - name: Install dependencies
       run: pip3 install -U online-judge-verify-helper
 
+    - name: Copy dependencies
+      run: cp -r ./.github/oj-verify/ /opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify_helper/
+
     - name: run verify
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

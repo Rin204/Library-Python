@@ -1,5 +1,14 @@
 [tool.black]
 line-length = 99
+exclude = '''
+(
+  /(
+      \.github
+    | \.ruff_cache
+    | \.verify-helper
+  )/
+)
+'''
 
 [tool.ruff]
 line-length = 99
@@ -9,3 +18,4 @@ ignore = [
     "E402",
     "F811"
 ]
+exclude = [".github/"]
