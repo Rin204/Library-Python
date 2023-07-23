@@ -1,26 +1,27 @@
-# name: docs
+name: docs
 
-# on:
-#   push:
-#     branches:
-#       - main
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
 
-# jobs:
-#   docs:
-#     runs-on: ubuntu-latest
+jobs:
+  docs:
+    runs-on: ubuntu-latest
 
-#     steps:
-#     - uses: actions/checkout@v1
+    steps:
+    - uses: actions/checkout@v1
 
-#     - name: Set up Python
-#       uses: actions/setup-python@v1
+    - name: Set up Python
+      uses: actions/setup-python@v1
 
-#     - name: Install dependencies
-#       run: pip3 install -U online-judge-verify-helper
+    - name: Install dependencies
+      run: pip3 install -U online-judge-verify-helper
 
-#     - name: generate docs
-#       env:
-#         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-#         YUKICODER_TOKEN: ${{ secrets.YUKICODER_TOKEN }}
-#         GH_PAT: ${{ secrets.GH_PAT }}
-#       run: oj-verify docs
+    - name: generate docs
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        YUKICODER_TOKEN: ${{ secrets.YUKICODER_TOKEN }}
+        GH_PAT: ${{ secrets.GH_PAT }}
+      run: oj-verify docs
