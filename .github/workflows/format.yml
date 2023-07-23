@@ -7,7 +7,7 @@ on:
       - main
 
 jobs:
-  verify:
+  format:
     runs-on: ubuntu-latest
 
     steps:
