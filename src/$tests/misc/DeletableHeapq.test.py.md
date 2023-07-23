@@ -39,8 +39,8 @@ data:
     \ -= 1\n            tot -= p\n\n    assert len(hq) == cnt\n    assert hq.tot ==\
     \ tot, (_, hq.tot, tot)\n\n\na, b = map(int, input().split())\nprint(a + b)\n"
   dependsOn:
-  - src/data_structure/BIT.py
   - src/misc/DeletableHeapq.py
+  - src/data_structure/BIT.py
   isVerificationFile: true
   path: src/$tests/misc/DeletableHeapq.test.py
   requiredBy: []

@@ -33,8 +33,8 @@ data:
     \ v):\n            l = G.L[l]\n            r = G.L[r]\n            if l > r:\n\
     \                l, r = r, l\n            ans += bit.sum(l, r + 1)\n        print(ans)\n"
   dependsOn:
-  - src/data_structure/BIT.py
   - src/tree/HLD.py
+  - src/data_structure/BIT.py
   isVerificationFile: true
   path: src/$tests/tree/HLD.test.py
   requiredBy: []

@@ -45,8 +45,8 @@ data:
     \   x, y, z = map(int, input().split())\n    x -= 1\n    out.append(get(x))\n\
     \    add(x, y, z)\n\nprint(*out, sep=\"\\n\")\n"
   dependsOn:
-  - src/data_structure/BIT.py
   - src/tree/CentroidDecomposition.py
+  - src/data_structure/BIT.py
   isVerificationFile: true
   path: src/$tests/tree/CentroidDecomposition.test.py
   requiredBy: []

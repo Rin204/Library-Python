@@ -56,8 +56,8 @@ data:
     \      R = [pr.nCk(n, k) for pr in self.prime_nCk]\n        return Garner(R, self.M)[0]\n"
   dependsOn:
   - src/math/modinv.py
-  - src/math/Garner.py
   - src/math/PollardRho.py
+  - src/math/Garner.py
   isVerificationFile: false
   path: src/math/CombinationArbitrary.py
   requiredBy: []

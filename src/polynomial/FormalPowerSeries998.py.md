@@ -114,10 +114,10 @@ data:
     \        l = 1\n        while l < deg:\n            l *= 2\n            g = (g\
     \ + self[:l] * g.inv(l)) * inv2\n            del g[l:]\n\n        return g[:deg]\n"
   dependsOn:
-  - src/math/modinv.py
   - src/convolution/NTT998.py
-  - src/math/Combination.py
   - src/math/cipolla.py
+  - src/math/modinv.py
+  - src/math/Combination.py
   isVerificationFile: false
   path: src/polynomial/FormalPowerSeries998.py
   requiredBy: []

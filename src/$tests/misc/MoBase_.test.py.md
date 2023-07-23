@@ -39,8 +39,8 @@ data:
     \nle = len(dic)\nbit = BIT(le)\nans = [0] * Q\n\nmo.run()\nprint(*ans, sep=\"\\\
     n\")\n"
   dependsOn:
-  - src/data_structure/BIT.py
   - src/misc/MoBase_.py
+  - src/data_structure/BIT.py
   isVerificationFile: true
   path: src/$tests/misc/MoBase_.test.py
   requiredBy: []

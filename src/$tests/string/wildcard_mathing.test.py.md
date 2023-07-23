@@ -42,8 +42,8 @@ data:
     \     ind = res[i]\n\n    for i in range(m):\n        S[i + ind] = T[i]\n    print(*S,\
     \ sep=\"\")\n\n\nfor _ in range(int(input())):\n    solve()\n"
   dependsOn:
-  - src/string/RollingHash.py
   - src/string/wildcard_mathing.py
+  - src/string/RollingHash.py
   isVerificationFile: true
   path: src/$tests/string/wildcard_mathing.test.py
   requiredBy: []
