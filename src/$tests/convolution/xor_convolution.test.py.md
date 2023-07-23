@@ -1,0 +1,56 @@
+---
+data:
+  _extendedDependsOn: []
+  _extendedRequiredBy: []
+  _extendedVerifiedWith: []
+  _isVerificationFailed: true
+  _pathExtension: py
+  _verificationStatusIcon: ':x:'
+  attributes:
+    PROBLEM: https://judge.yosupo.jp/problem/bitwise_xor_convolution
+    links:
+    - https://judge.yosupo.jp/problem/bitwise_xor_convolution
+  bundledCode: "Traceback (most recent call last):\n  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/documentation/build.py\"\
+    , line 71, in _render_source_code_stat\n    bundled_code = language.bundle(stat.path,\
+    \ basedir=basedir, options={'include_paths': [basedir]}).decode()\n          \
+    \         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\
+    \  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/languages/python.py\"\
+    , line 96, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
+  code: '# verification-helper: PROBLEM https://judge.yosupo.jp/problem/bitwise_xor_convolution
+
+    from pathlib import Path
+
+    import sys
+
+
+    sys.path.append(str(Path(__file__).resolve().parent.parent.parent.parent))
+
+    from src.convolution.xor_convolution import xor_convolution
+
+
+
+    n = int(input())
+
+    A = list(map(int, input().split()))
+
+    B = list(map(int, input().split()))
+
+    C = xor_convolution(A, B, 998244353)
+
+    print(*C)
+
+    '
+  dependsOn: []
+  isVerificationFile: true
+  path: src/$tests/convolution/xor_convolution.test.py
+  requiredBy: []
+  timestamp: '1970-01-01 00:00:00+00:00'
+  verificationStatus: TEST_WRONG_ANSWER
+  verifiedWith: []
+documentation_of: src/$tests/convolution/xor_convolution.test.py
+layout: document
+redirect_from:
+- /verify/src/$tests/convolution/xor_convolution.test.py
+- /verify/src/$tests/convolution/xor_convolution.test.py.html
+title: src/$tests/convolution/xor_convolution.test.py
+---

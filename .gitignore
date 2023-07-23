@@ -1,0 +1,6 @@
+.vscode/
+tmp/
+.ruff_cache
+__pycache__
+template/
+src/timestamps.json

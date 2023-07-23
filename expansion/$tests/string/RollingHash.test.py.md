@@ -1,0 +1,54 @@
+---
+data:
+  _extendedDependsOn: []
+  _extendedRequiredBy: []
+  _extendedVerifiedWith: []
+  _isVerificationFailed: true
+  _pathExtension: py
+  _verificationStatusIcon: ':x:'
+  attributes:
+    PROBLEM: https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_14_B&lang=ja
+    links:
+    - https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_14_B&lang=ja
+  bundledCode: "Traceback (most recent call last):\n  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/documentation/build.py\"\
+    , line 71, in _render_source_code_stat\n    bundled_code = language.bundle(stat.path,\
+    \ basedir=basedir, options={'include_paths': [basedir]}).decode()\n          \
+    \         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\
+    \  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/languages/python.py\"\
+    , line 96, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
+  code: "# verification-helper: PROBLEM https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_14_B&lang=ja\n\
+    \nfrom pathlib import Path\nimport sys\n\nsys.path.append(str(Path(__file__).resolve().parent.parent.parent.parent))\n\
+    \nimport random\n\n\nclass RollingHash:\n    mask30 = (1 << 30) - 1\n    mask31\
+    \ = (1 << 31) - 1\n    MOD = (1 << 61) - 1\n    Base = None\n    pw = [1]\n\n\
+    \    def __init__(self, S):\n        if RollingHash.Base is None:\n          \
+    \  RollingHash.Base = random.randrange(129, 1 << 30)\n        for i in range(len(RollingHash.pw),\
+    \ len(S) + 1):\n            RollingHash.pw.append(\n                RollingHash.CalcMod(RollingHash.Mul(RollingHash.pw[i\
+    \ - 1], self.__class__.Base))\n            )\n\n        self.hash = [0] * (len(S)\
+    \ + 1)\n        for i, s in enumerate(S, 1):\n            self.hash[i] = RollingHash.CalcMod(\n\
+    \                RollingHash.Mul(self.hash[i - 1], RollingHash.Base) + ord(s)\n\
+    \            )\n\n    def get(self, l, r):\n        return RollingHash.CalcMod(\n\
+    \            self.hash[r] - RollingHash.Mul(self.hash[l], RollingHash.pw[r - l])\n\
+    \        )\n\n    def Mul(l, r):\n        lu = l >> 31\n        ld = l & RollingHash.mask31\n\
+    \        ru = r >> 31\n        rd = r & RollingHash.mask31\n        middlebit\
+    \ = ld * ru + lu * rd\n        return (\n            ((lu * ru) << 1)\n      \
+    \      + ld * rd\n            + ((middlebit & RollingHash.mask30) << 31)\n   \
+    \         + (middlebit >> 30)\n        )\n\n    def CalcMod(val):\n        if\
+    \ val < 0:\n            val %= RollingHash.MOD\n        val = (val & RollingHash.MOD)\
+    \ + (val >> 61)\n        if val > RollingHash.MOD:\n            val -= RollingHash.MOD\n\
+    \        return val\n\n\nS = input()\nT = input()\nls = len(S)\nlt = len(T)\n\
+    rh1 = RollingHash(S)\nrh2 = RollingHash(T)\nfor i in range(ls - lt + 1):\n   \
+    \ if rh1.get(i, i + lt) == rh2.get(0, lt):\n        print(i)\n"
+  dependsOn: []
+  isVerificationFile: true
+  path: expansion/$tests/string/RollingHash.test.py
+  requiredBy: []
+  timestamp: '1970-01-01 00:00:00+00:00'
+  verificationStatus: TEST_WRONG_ANSWER
+  verifiedWith: []
+documentation_of: expansion/$tests/string/RollingHash.test.py
+layout: document
+redirect_from:
+- /verify/expansion/$tests/string/RollingHash.test.py
+- /verify/expansion/$tests/string/RollingHash.test.py.html
+title: expansion/$tests/string/RollingHash.test.py
+---
