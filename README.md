@@ -9,6 +9,11 @@ MOD 系は 998244353 を暗に仮定しているものがいくつかあるの�
 
 個人用競プロ用で作成したライブラリなので，書き方が変なものは一定すうあると思いますが，ご了承ください．
 
+一部 `Base_` と末尾についている class があります．これらは，主に引数で与える想定になる関数について，
+- `Base_` が付いていない場合：引数に与える
+- `Base_` が付いている場合：class を継承して各種関数を作成する
+
+使い方を想定しています．使用感は https://github.com/Rin204/Library-Python/blob/main/src/%24tests/data_structure/segtree.test.py https://github.com/Rin204/Library-Python/blob/main/src/%24tests/data_structure/segtree2.test.py あたりを見てください．
 
 ## expansion.py
 
