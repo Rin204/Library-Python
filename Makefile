@@ -21,7 +21,7 @@ verify:
 
 docs:
 	oj-verify docs
-	cd .verify-helper/markdown; bundle exec jekyll serve
+	cd .verify-helper/markdown; bundle add webrick; bundle exec jekyll serve
 
 exp:
 	bash expansion_all.sh
