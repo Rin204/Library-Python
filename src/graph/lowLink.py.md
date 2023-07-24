@@ -3,10 +3,10 @@ data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
   _extendedVerifiedWith:
-  - icon: ':x:'
+  - icon: ''
     path: src/$tests/graph/lowlink_bridges.test.py
     title: src/$tests/graph/lowlink_bridges.test.py
-  - icon: ':x:'
+  - icon: ''
     path: src/$tests/graph/lowlinlk_artic.test.py
     title: src/$tests/graph/lowlinlk_artic.test.py
   _isVerificationFailed: true
@@ -14,10 +14,8 @@ data:
   attributes:
     links: []
   bundledCode: "Traceback (most recent call last):\n  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/documentation/build.py\"\
-    , line 71, in _render_source_code_stat\n    bundled_code = language.bundle(stat.path,\
-    \ basedir=basedir, options={'include_paths': [basedir]}).decode()\n          \
-    \         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\
-    \  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/languages/python.py\"\
+    , line 81, in _render_source_code_stat\n    bundled_code = language.bundle(\n\
+    \                   ^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/languages/python.py\"\
     , line 108, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
   code: "def lowLink(edges):\n    \"\"\"\n    edges[from] = [to1, to2, ...]\n    \"\
     \"\"\n    n = len(edges)\n    ord = [-1] * n\n    low = [-1] * n\n    isartic\

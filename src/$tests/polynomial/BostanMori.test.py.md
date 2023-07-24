@@ -1,10 +1,10 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':x:'
+  - icon: ''
     path: src/convolution/NTT998.py
     title: src/convolution/NTT998.py
-  - icon: ':x:'
+  - icon: ''
     path: src/polynomial/BostanMori998.py
     title: src/polynomial/BostanMori998.py
   _extendedRequiredBy: []
@@ -16,10 +16,8 @@ data:
     links:
     - https://judge.yosupo.jp/problem/kth_term_of_linearly_recurrent_sequence
   bundledCode: "Traceback (most recent call last):\n  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/documentation/build.py\"\
-    , line 71, in _render_source_code_stat\n    bundled_code = language.bundle(stat.path,\
-    \ basedir=basedir, options={'include_paths': [basedir]}).decode()\n          \
-    \         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\
-    \  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/languages/python.py\"\
+    , line 81, in _render_source_code_stat\n    bundled_code = language.bundle(\n\
+    \                   ^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/languages/python.py\"\
     , line 108, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
   code: '# verification-helper: PROBLEM https://judge.yosupo.jp/problem/kth_term_of_linearly_recurrent_sequence
 
@@ -52,8 +50,8 @@ data:
 
     '
   dependsOn:
-  - src/polynomial/BostanMori998.py
   - src/convolution/NTT998.py
+  - src/polynomial/BostanMori998.py
   isVerificationFile: true
   path: src/$tests/polynomial/BostanMori.test.py
   requiredBy: []

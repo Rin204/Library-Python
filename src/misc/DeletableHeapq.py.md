@@ -2,14 +2,14 @@
 data:
   _extendedDependsOn: []
   _extendedRequiredBy:
-  - icon: ':x:'
+  - icon: ''
     path: src/misc/MadianHeap.py
     title: src/misc/MadianHeap.py
-  - icon: ':x:'
+  - icon: ''
     path: src/misc/TopKHeap.py
     title: src/misc/TopKHeap.py
   _extendedVerifiedWith:
-  - icon: ':x:'
+  - icon: ''
     path: src/$tests/misc/DeletableHeapq.test.py
     title: src/$tests/misc/DeletableHeapq.test.py
   _isVerificationFailed: true
@@ -17,10 +17,8 @@ data:
   attributes:
     links: []
   bundledCode: "Traceback (most recent call last):\n  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/documentation/build.py\"\
-    , line 71, in _render_source_code_stat\n    bundled_code = language.bundle(stat.path,\
-    \ basedir=basedir, options={'include_paths': [basedir]}).decode()\n          \
-    \         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\
-    \  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/languages/python.py\"\
+    , line 81, in _render_source_code_stat\n    bundled_code = language.bundle(\n\
+    \                   ^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/languages/python.py\"\
     , line 108, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
   code: "import heapq\n\n\nclass DeletableHeapq:\n    def __init__(self, lst=None,\
     \ reverse=False):\n        if reverse:\n            self.pm = -1\n        else:\n\

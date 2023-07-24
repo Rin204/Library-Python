@@ -1,15 +1,15 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':x:'
+  - icon: ''
     path: src/math/ext_gcd.py
     title: src/math/ext_gcd.py
   _extendedRequiredBy:
-  - icon: ':x:'
+  - icon: ''
     path: src/math/CombinationArbitrary.py
     title: src/math/CombinationArbitrary.py
   _extendedVerifiedWith:
-  - icon: ':x:'
+  - icon: ''
     path: src/$tests/math/Garner.test.py
     title: src/$tests/math/Garner.test.py
   _isVerificationFailed: true
@@ -17,10 +17,8 @@ data:
   attributes:
     links: []
   bundledCode: "Traceback (most recent call last):\n  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/documentation/build.py\"\
-    , line 71, in _render_source_code_stat\n    bundled_code = language.bundle(stat.path,\
-    \ basedir=basedir, options={'include_paths': [basedir]}).decode()\n          \
-    \         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\
-    \  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/languages/python.py\"\
+    , line 81, in _render_source_code_stat\n    bundled_code = language.bundle(\n\
+    \                   ^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/languages/python.py\"\
     , line 108, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
   code: "from src.math.ext_gcd import ext_gcd\n\n\ndef Garner(R, M):\n    r = 0\n\
     \    m = 1\n    for ri, mi in zip(R, M):\n        if ri < 0 or mi <= ri:\n   \

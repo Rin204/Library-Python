@@ -2,19 +2,19 @@
 data:
   _extendedDependsOn: []
   _extendedRequiredBy:
-  - icon: ':x:'
+  - icon: ''
     path: src/math/CombinationArbitrary.py
     title: src/math/CombinationArbitrary.py
-  - icon: ':x:'
+  - icon: ''
     path: src/polynomial/BostanMori998.py
     title: src/polynomial/BostanMori998.py
-  - icon: ':x:'
+  - icon: ''
     path: src/polynomial/FormalPowerSeries998.py
     title: src/polynomial/FormalPowerSeries998.py
-  - icon: ':x:'
+  - icon: ''
     path: src/polynomial/berlekamp_massey.py
     title: src/polynomial/berlekamp_massey.py
-  - icon: ':x:'
+  - icon: ''
     path: src/polynomial/berlekamp_massey_global_mod.py
     title: src/polynomial/berlekamp_massey_global_mod.py
   _extendedVerifiedWith: []
@@ -23,10 +23,8 @@ data:
   attributes:
     links: []
   bundledCode: "Traceback (most recent call last):\n  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/documentation/build.py\"\
-    , line 71, in _render_source_code_stat\n    bundled_code = language.bundle(stat.path,\
-    \ basedir=basedir, options={'include_paths': [basedir]}).decode()\n          \
-    \         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\
-    \  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/languages/python.py\"\
+    , line 81, in _render_source_code_stat\n    bundled_code = language.bundle(\n\
+    \                   ^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/languages/python.py\"\
     , line 108, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
   code: "def modinv(a, MOD):\n    b = MOD\n    u = 1\n    v = 0\n    while b > 0:\n\
     \        t = a // b\n        a -= t * b\n        u -= t * v\n        a, b = b,\

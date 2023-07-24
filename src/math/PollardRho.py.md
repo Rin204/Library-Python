@@ -1,15 +1,15 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':x:'
+  - icon: ''
     path: src/math/MillerRabin.py
     title: src/math/MillerRabin.py
   _extendedRequiredBy:
-  - icon: ':x:'
+  - icon: ''
     path: src/math/CombinationArbitrary.py
     title: src/math/CombinationArbitrary.py
   _extendedVerifiedWith:
-  - icon: ':x:'
+  - icon: ''
     path: src/$tests/math/Pollard_Rho.test.py
     title: src/$tests/math/Pollard_Rho.test.py
   _isVerificationFailed: true
@@ -18,10 +18,8 @@ data:
     links:
     - https://qiita.com/t_fuki/items/7cd50de54d3c5d063b4a
   bundledCode: "Traceback (most recent call last):\n  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/documentation/build.py\"\
-    , line 71, in _render_source_code_stat\n    bundled_code = language.bundle(stat.path,\
-    \ basedir=basedir, options={'include_paths': [basedir]}).decode()\n          \
-    \         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\
-    \  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/languages/python.py\"\
+    , line 81, in _render_source_code_stat\n    bundled_code = language.bundle(\n\
+    \                   ^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/languages/python.py\"\
     , line 108, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
   code: "from math import gcd\n\nfrom src.math.MillerRabin import MillerRabin\n\n\n\
     def pollard(n):\n    # https://qiita.com/t_fuki/items/7cd50de54d3c5d063b4a\n\n\

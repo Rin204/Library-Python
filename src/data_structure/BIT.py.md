@@ -3,25 +3,25 @@ data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
   _extendedVerifiedWith:
-  - icon: ':x:'
+  - icon: ''
     path: src/$tests/data_structure/BIT.test.py
     title: src/$tests/data_structure/BIT.test.py
-  - icon: ':x:'
+  - icon: ''
     path: src/$tests/data_structure/BIT2.test.py
     title: src/$tests/data_structure/BIT2.test.py
-  - icon: ':x:'
+  - icon: ''
     path: src/$tests/misc/DeletableHeapq.test.py
     title: src/$tests/misc/DeletableHeapq.test.py
-  - icon: ':x:'
+  - icon: ''
     path: src/$tests/misc/Mo.test.py
     title: src/$tests/misc/Mo.test.py
-  - icon: ':x:'
+  - icon: ''
     path: src/$tests/misc/MoBase_.test.py
     title: src/$tests/misc/MoBase_.test.py
-  - icon: ':x:'
+  - icon: ''
     path: src/$tests/tree/CentroidDecomposition.test.py
     title: src/$tests/tree/CentroidDecomposition.test.py
-  - icon: ':x:'
+  - icon: ''
     path: src/$tests/tree/HLD.test.py
     title: src/$tests/tree/HLD.test.py
   _isVerificationFailed: true
@@ -29,10 +29,8 @@ data:
   attributes:
     links: []
   bundledCode: "Traceback (most recent call last):\n  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/documentation/build.py\"\
-    , line 71, in _render_source_code_stat\n    bundled_code = language.bundle(stat.path,\
-    \ basedir=basedir, options={'include_paths': [basedir]}).decode()\n          \
-    \         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\
-    \  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/languages/python.py\"\
+    , line 81, in _render_source_code_stat\n    bundled_code = language.bundle(\n\
+    \                   ^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/languages/python.py\"\
     , line 108, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
   code: "class BIT:\n    def __init__(self, n):\n        self.n = n\n        self.data\
     \ = [0] * (n + 1)\n        if n == 0:\n            self.n0 = 0\n        else:\n\

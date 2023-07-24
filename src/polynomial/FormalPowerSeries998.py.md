@@ -1,30 +1,30 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':x:'
+  - icon: ''
     path: src/convolution/NTT998.py
     title: src/convolution/NTT998.py
-  - icon: ':x:'
+  - icon: ''
     path: src/math/Combination.py
     title: src/math/Combination.py
-  - icon: ':x:'
+  - icon: ''
     path: src/math/cipolla.py
     title: src/math/cipolla.py
-  - icon: ':warning:'
+  - icon: ''
     path: src/math/modinv.py
     title: src/math/modinv.py
   _extendedRequiredBy: []
   _extendedVerifiedWith:
-  - icon: ':x:'
+  - icon: ''
     path: src/$tests/polynomial/inv_of_FormalPowerSeries.test.py
     title: src/$tests/polynomial/inv_of_FormalPowerSeries.test.py
-  - icon: ':x:'
+  - icon: ''
     path: src/$tests/polynomial/log_of_FormalPowerSeries.test.py
     title: src/$tests/polynomial/log_of_FormalPowerSeries.test.py
-  - icon: ':x:'
+  - icon: ''
     path: src/$tests/polynomial/pow_of_FormalPowerSeries.test.py
     title: src/$tests/polynomial/pow_of_FormalPowerSeries.test.py
-  - icon: ':x:'
+  - icon: ''
     path: src/$tests/polynomial/sqrt_of_FormalPowerSeries.test.py
     title: src/$tests/polynomial/sqrt_of_FormalPowerSeries.test.py
   _isVerificationFailed: true
@@ -32,10 +32,8 @@ data:
   attributes:
     links: []
   bundledCode: "Traceback (most recent call last):\n  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/documentation/build.py\"\
-    , line 71, in _render_source_code_stat\n    bundled_code = language.bundle(stat.path,\
-    \ basedir=basedir, options={'include_paths': [basedir]}).decode()\n          \
-    \         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\
-    \  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/languages/python.py\"\
+    , line 81, in _render_source_code_stat\n    bundled_code = language.bundle(\n\
+    \                   ^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/languages/python.py\"\
     , line 108, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
   code: "from src.convolution.NTT998 import NTT998\nfrom src.math.modinv import modinv\n\
     from src.math.Combination import Combination\nfrom src.math.cipolla import cipolla\n\
@@ -114,9 +112,9 @@ data:
     \ + self[:l] * g.inv(l)) * inv2\n            del g[l:]\n\n        return g[:deg]\n"
   dependsOn:
   - src/math/modinv.py
-  - src/math/cipolla.py
-  - src/math/Combination.py
   - src/convolution/NTT998.py
+  - src/math/Combination.py
+  - src/math/cipolla.py
   isVerificationFile: false
   path: src/polynomial/FormalPowerSeries998.py
   requiredBy: []
