@@ -14,7 +14,6 @@ data:
     title: src/$tests/math/Pollard_Rho.test.py
   _isVerificationFailed: true
   _pathExtension: py
-  _verificationStatusIcon: ':x:'
   attributes:
     links:
     - https://qiita.com/t_fuki/items/7cd50de54d3c5d063b4a

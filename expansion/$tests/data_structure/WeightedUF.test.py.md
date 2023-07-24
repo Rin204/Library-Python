@@ -5,7 +5,6 @@ data:
   _extendedVerifiedWith: []
   _isVerificationFailed: true
   _pathExtension: py
-  _verificationStatusIcon: ':x:'
   attributes:
     PROBLEM: https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/1/DSL_1_B
     links:

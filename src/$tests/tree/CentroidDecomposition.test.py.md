@@ -11,7 +11,6 @@ data:
   _extendedVerifiedWith: []
   _isVerificationFailed: true
   _pathExtension: py
-  _verificationStatusIcon: ':x:'
   attributes:
     PROBLEM: https://yukicoder.me/problems/no/1038
     links:
@@ -45,8 +44,8 @@ data:
     \   x, y, z = map(int, input().split())\n    x -= 1\n    out.append(get(x))\n\
     \    add(x, y, z)\n\nprint(*out, sep=\"\\n\")\n"
   dependsOn:
-  - src/tree/CentroidDecomposition.py
   - src/data_structure/BIT.py
+  - src/tree/CentroidDecomposition.py
   isVerificationFile: true
   path: src/$tests/tree/CentroidDecomposition.test.py
   requiredBy: []

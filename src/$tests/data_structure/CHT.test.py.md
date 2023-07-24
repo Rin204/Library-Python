@@ -8,7 +8,6 @@ data:
   _extendedVerifiedWith: []
   _isVerificationFailed: true
   _pathExtension: py
-  _verificationStatusIcon: ':x:'
   attributes:
     PROBLEM: https://yukicoder.me/problems/no/409
     links:

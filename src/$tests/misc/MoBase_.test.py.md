@@ -11,7 +11,6 @@ data:
   _extendedVerifiedWith: []
   _isVerificationFailed: true
   _pathExtension: py
-  _verificationStatusIcon: ':x:'
   attributes:
     PROBLEM: https://judge.yosupo.jp/problem/static_range_inversions_query
     links:
@@ -39,8 +38,8 @@ data:
     \nle = len(dic)\nbit = BIT(le)\nans = [0] * Q\n\nmo.run()\nprint(*ans, sep=\"\\\
     n\")\n"
   dependsOn:
-  - src/misc/MoBase_.py
   - src/data_structure/BIT.py
+  - src/misc/MoBase_.py
   isVerificationFile: true
   path: src/$tests/misc/MoBase_.test.py
   requiredBy: []

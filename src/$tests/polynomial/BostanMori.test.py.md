@@ -11,7 +11,6 @@ data:
   _extendedVerifiedWith: []
   _isVerificationFailed: true
   _pathExtension: py
-  _verificationStatusIcon: ':x:'
   attributes:
     PROBLEM: https://judge.yosupo.jp/problem/kth_term_of_linearly_recurrent_sequence
     links:
@@ -53,8 +52,8 @@ data:
 
     '
   dependsOn:
-  - src/convolution/NTT998.py
   - src/polynomial/BostanMori998.py
+  - src/convolution/NTT998.py
   isVerificationFile: true
   path: src/$tests/polynomial/BostanMori.test.py
   requiredBy: []

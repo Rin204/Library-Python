@@ -14,7 +14,6 @@ data:
     title: src/$tests/polynomial/BostanMori.test.py
   _isVerificationFailed: true
   _pathExtension: py
-  _verificationStatusIcon: ':x:'
   attributes:
     links: []
   bundledCode: "Traceback (most recent call last):\n  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/documentation/build.py\"\
@@ -34,8 +33,8 @@ data:
     \ R)]\n        NTT998.butterfly_inv(Q)\n        Q = Q[::2]\n\n        n >>= 1\n\
     \    return P[0] * modinv(Q[0], 998244353) % 998244353\n"
   dependsOn:
-  - src/convolution/NTT998.py
   - src/math/modinv.py
+  - src/convolution/NTT998.py
   isVerificationFile: false
   path: src/polynomial/BostanMori998.py
   requiredBy: []

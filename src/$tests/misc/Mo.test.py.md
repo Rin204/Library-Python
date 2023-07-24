@@ -11,7 +11,6 @@ data:
   _extendedVerifiedWith: []
   _isVerificationFailed: true
   _pathExtension: py
-  _verificationStatusIcon: ':x:'
   attributes:
     PROBLEM: https://judge.yosupo.jp/problem/static_range_inversions_query
     links:
@@ -37,8 +36,8 @@ data:
     \n\ndef rem(i):\n    ans[i] = inv\n\n\nmo.run(add_left, add_right, delete_left,\
     \ delete_right, rem)\nprint(*ans, sep=\"\\n\")\n"
   dependsOn:
-  - src/misc/Mo.py
   - src/data_structure/BIT.py
+  - src/misc/Mo.py
   isVerificationFile: true
   path: src/$tests/misc/Mo.test.py
   requiredBy: []

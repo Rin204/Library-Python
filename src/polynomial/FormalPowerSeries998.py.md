@@ -29,7 +29,6 @@ data:
     title: src/$tests/polynomial/sqrt_of_FormalPowerSeries.test.py
   _isVerificationFailed: true
   _pathExtension: py
-  _verificationStatusIcon: ':x:'
   attributes:
     links: []
   bundledCode: "Traceback (most recent call last):\n  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/documentation/build.py\"\
@@ -114,10 +113,10 @@ data:
     \        l = 1\n        while l < deg:\n            l *= 2\n            g = (g\
     \ + self[:l] * g.inv(l)) * inv2\n            del g[l:]\n\n        return g[:deg]\n"
   dependsOn:
-  - src/convolution/NTT998.py
-  - src/math/cipolla.py
   - src/math/modinv.py
+  - src/math/cipolla.py
   - src/math/Combination.py
+  - src/convolution/NTT998.py
   isVerificationFile: false
   path: src/polynomial/FormalPowerSeries998.py
   requiredBy: []

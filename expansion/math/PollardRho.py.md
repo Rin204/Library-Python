@@ -5,7 +5,6 @@ data:
   _extendedVerifiedWith: []
   _isVerificationFailed: false
   _pathExtension: py
-  _verificationStatusIcon: ':warning:'
   attributes:
     links:
     - https://qiita.com/t_fuki/items/7cd50de54d3c5d063b4a
