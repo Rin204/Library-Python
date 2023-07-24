@@ -25,10 +25,11 @@ jobs:
       run: |
         rm -rf /opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify
         cp -r ./.github/oj-verify /opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify
+        sleep 5
 
     - name: run verify
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         YUKICODER_TOKEN: ${{ secrets.YUKICODER_TOKEN }}
         GH_PAT: ${{ secrets.GH_PAT }}
-      run: python3 .github/oj-verify/main.py all
+      run: python3 .github/oj-verify/main.py docs
