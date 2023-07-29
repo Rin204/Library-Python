@@ -50,8 +50,8 @@ data:
 
     '
   dependsOn:
-  - src/convolution/NTT998.py
   - src/polynomial/BostanMori998.py
+  - src/convolution/NTT998.py
   isVerificationFile: true
   path: src/$tests/polynomial/BostanMori.test.py
   requiredBy: []

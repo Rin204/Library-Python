@@ -133,15 +133,15 @@ data:
     \ sep=\"\")\n\n\nfor _ in range(int(input())):\n    solve()\n"
   dependsOn: []
   isVerificationFile: true
-  path: expansion/$tests/string/wildcard_mathing.test.py
+  path: expansion/$tests/string/wildcard_matching.test.py
   requiredBy: []
-  timestamp: '2023-07-23 08:45:17+09:00'
+  timestamp: '2023-07-29 13:32:11+09:00'
   verificationStatus: TEST_WRONG_ANSWER
   verifiedWith: []
-documentation_of: expansion/$tests/string/wildcard_mathing.test.py
+documentation_of: expansion/$tests/string/wildcard_matching.test.py
 layout: document
 redirect_from:
-- /verify/expansion/$tests/string/wildcard_mathing.test.py
-- /verify/expansion/$tests/string/wildcard_mathing.test.py.html
-title: expansion/$tests/string/wildcard_mathing.test.py
+- /verify/expansion/$tests/string/wildcard_matching.test.py
+- /verify/expansion/$tests/string/wildcard_matching.test.py.html
+title: expansion/$tests/string/wildcard_matching.test.py
 ---

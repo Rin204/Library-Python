@@ -35,8 +35,14 @@ data:
   verifiedWith: []
 documentation_of: expansion/geometry/arg_sort.py
 layout: document
-redirect_from:
-- /library/expansion/geometry/arg_sort.py
-- /library/expansion/geometry/arg_sort.py.html
-title: expansion/geometry/arg_sort.py
+title: "\u504F\u89D2\u30BD\u30FC\u30C8"
 ---
+
+# 概要
+与えられた頂点群を偏角ソートします．
+
+## 使い方
+
+```
+sorted_points = arg_sort(points)
+```

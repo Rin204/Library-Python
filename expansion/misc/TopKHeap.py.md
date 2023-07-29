@@ -55,8 +55,17 @@ data:
   verifiedWith: []
 documentation_of: expansion/misc/TopKHeap.py
 layout: document
-redirect_from:
-- /library/expansion/misc/TopKHeap.py
-- /library/expansion/misc/TopKHeap.py.html
-title: expansion/misc/TopKHeap.py
+title: "\u6570\u5217\u3092\u4E0A\u4F4Dk\u500B\u3092\u7BA1\u7406\u3059\u308B\u3084\u3064"
 ---
+
+# 概要
+数列の（最大）上位 K 個を管理しておく用のやつです．内部で hashDict を使っているので，hack 対策に rnd() を一様に足してあげると良いかもしれません
+
+## 使い方
+
+- \_\_init\_\_(K, reverse=False, A=None) := reverse=True にすると大きいほうから，False にすると小さいほうから K 個を管理します．Aに要素を指定すると初期の配列を作ってくれます
+- \_\_len\_\_() :=現在の配列長を返します．
+- tot := 上位 K 個の合計を返します．
+- sum := 上位 K 個の合計を返します．(tot と同じ)
+- push(x) := xを追加します．
+- remove(x) := xを削除します．存在しない場合未定義です

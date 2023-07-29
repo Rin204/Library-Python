@@ -34,25 +34,25 @@ data:
       title: BIT
     - icon: ''
       path: expansion/data_structure/ConvexHullTrick.py
-      title: expansion/data_structure/ConvexHullTrick.py
+      title: ConvexHullTrick
     - icon: ''
       path: expansion/data_structure/DisjointSparseTable.py
-      title: expansion/data_structure/DisjointSparseTable.py
+      title: DisjointSparseTable
     - icon: ''
       path: expansion/data_structure/DisjointSparseTableBase_.py
       title: expansion/data_structure/DisjointSparseTableBase_.py
     - icon: ''
       path: expansion/data_structure/LazySegmentTree.py
-      title: expansion/data_structure/LazySegmentTree.py
+      title: LazySegmentTree
     - icon: ''
       path: expansion/data_structure/LazySegmentTreeBase_.py
       title: expansion/data_structure/LazySegmentTreeBase_.py
     - icon: ''
       path: expansion/data_structure/RollbackUnionFind.py
-      title: expansion/data_structure/RollbackUnionFind.py
+      title: RollbackUnionFind
     - icon: ''
       path: expansion/data_structure/SWAG.py
-      title: expansion/data_structure/SWAG.py
+      title: SWAG
     - icon: ''
       path: expansion/data_structure/SWAGBase_.py
       title: expansion/data_structure/SWAGBase_.py
@@ -64,7 +64,7 @@ data:
       title: SegmentTreeBase_
     - icon: ''
       path: expansion/data_structure/SparseTable.py
-      title: expansion/data_structure/SparseTable.py
+      title: SparseTable
     - icon: ''
       path: expansion/data_structure/SparseTableBase_.py
       title: expansion/data_structure/SparseTableBase_.py
@@ -73,7 +73,7 @@ data:
       title: UnionFind
     - icon: ''
       path: expansion/data_structure/WeightedUnionFind.py
-      title: expansion/data_structure/WeightedUnionFind.py
+      title: WeightedUnionFind
   - name: expansion/data_structure/segtree_
     pages:
     - icon: ''
@@ -83,30 +83,30 @@ data:
     pages:
     - icon: ''
       path: expansion/geometry/arg_sort.py
-      title: expansion/geometry/arg_sort.py
+      title: "\u504F\u89D2\u30BD\u30FC\u30C8"
     - icon: ''
       path: expansion/geometry/convex_hull.py
-      title: expansion/geometry/convex_hull.py
+      title: "\u51F8\u5305"
   - name: expansion/graph
     pages:
     - icon: ''
       path: expansion/graph/Hungarian.py
-      title: expansion/graph/Hungarian.py
+      title: Hungarian
     - icon: ''
       path: expansion/graph/SCC.py
-      title: expansion/graph/SCC.py
+      title: SCC
     - icon: ''
       path: expansion/graph/bellmanFord.py
-      title: expansion/graph/bellmanFord.py
+      title: bellmanFord
     - icon: ''
       path: expansion/graph/dijkstra.py
-      title: expansion/graph/dijkstra.py
+      title: dijkstra
     - icon: ''
       path: expansion/graph/lowLink.py
-      title: expansion/graph/lowLink.py
+      title: lowLink
     - icon: ''
       path: expansion/graph/maxflow.py
-      title: expansion/graph/maxflow.py
+      title: maxflow
     - icon: ''
       path: expansion/graph/mincostflow.py
       title: expansion/graph/mincostflow.py
@@ -114,40 +114,40 @@ data:
     pages:
     - icon: ''
       path: expansion/math/Combination.py
-      title: expansion/math/Combination.py
+      title: Combination
     - icon: ''
       path: expansion/math/CombinationArbitrary.py
-      title: expansion/math/CombinationArbitrary.py
+      title: CombinationArbitrary
     - icon: ''
       path: expansion/math/EnumeratePrimes.py
       title: expansion/math/EnumeratePrimes.py
     - icon: ''
       path: expansion/math/Garner.py
-      title: expansion/math/Garner.py
+      title: Garner
     - icon: ''
       path: expansion/math/MillerRabin.py
-      title: expansion/math/MillerRabin.py
+      title: MillerRabin
     - icon: ''
       path: expansion/math/PollardRho.py
-      title: expansion/math/PollardRho.py
+      title: PollardRho
     - icon: ''
       path: expansion/math/Quotients.py
-      title: expansion/math/Quotients.py
+      title: Quotients
     - icon: ''
       path: expansion/math/TwoSAT.py
-      title: expansion/math/TwoSAT.py
+      title: 2SAT
     - icon: ''
       path: expansion/math/cipolla.py
-      title: expansion/math/cipolla.py
+      title: cipolla
     - icon: ''
       path: expansion/math/ext_gcd.py
-      title: expansion/math/ext_gcd.py
+      title: ext_gcd
     - icon: ''
       path: expansion/math/floor_sum.py
-      title: expansion/math/floor_sum.py
+      title: floor_sum
     - icon: ''
       path: expansion/math/mat_exp.py
-      title: expansion/math/mat_exp.py
+      title: "\u884C\u5217\u7D2F\u4E57"
     - icon: ''
       path: expansion/math/mat_exp_global_mod.py
       title: expansion/math/mat_exp_global_mod.py
@@ -158,45 +158,48 @@ data:
     pages:
     - icon: ''
       path: expansion/misc/Bitset.py
-      title: expansion/misc/Bitset.py
+      title: Bitset
     - icon: ''
       path: expansion/misc/DeletableHeapq.py
-      title: expansion/misc/DeletableHeapq.py
+      title: "\u524A\u9664\u53EF\u80FD heapq"
     - icon: ''
       path: expansion/misc/FastIO.py
-      title: expansion/misc/FastIO.py
+      title: FastIO
     - icon: ''
       path: expansion/misc/MadianHeap.py
-      title: expansion/misc/MadianHeap.py
+      title: "\u6570\u5217\u3092\u4E0A\u4F4D\u534A\u5206\u3068\u4E0B\u4F4D\u534A\u5206\
+        \u306B\u5206\u3051\u3066\u4E2D\u592E\u5024\u3092\u7BA1\u7406\u3059\u308B\u3084\
+        \u3064"
     - icon: ''
       path: expansion/misc/Mo.py
-      title: expansion/misc/Mo.py
+      title: Mo
     - icon: ''
       path: expansion/misc/MoBase_.py
       title: expansion/misc/MoBase_.py
     - icon: ''
       path: expansion/misc/TopKHeap.py
-      title: expansion/misc/TopKHeap.py
+      title: "\u6570\u5217\u3092\u4E0A\u4F4Dk\u500B\u3092\u7BA1\u7406\u3059\u308B\u3084\
+        \u3064"
     - icon: ''
       path: expansion/misc/make_popcount.py
-      title: expansion/misc/make_popcount.py
+      title: make_popcount
     - icon: ''
       path: expansion/misc/next_permutation.py
-      title: expansion/misc/next_permutation.py
+      title: next_permutation
     - icon: ''
       path: expansion/misc/popcount.py
-      title: expansion/misc/popcount.py
+      title: popcount
   - name: expansion/polynomial
     pages:
     - icon: ''
       path: expansion/polynomial/BostanMori998.py
-      title: expansion/polynomial/BostanMori998.py
+      title: BostanMori
     - icon: ''
       path: expansion/polynomial/FormalPowerSeries998.py
-      title: expansion/polynomial/FormalPowerSeries998.py
+      title: FormalPowerSeries
     - icon: ''
       path: expansion/polynomial/berlekamp_massey.py
-      title: expansion/polynomial/berlekamp_massey.py
+      title: berlekamp_massey
     - icon: ''
       path: expansion/polynomial/berlekamp_massey_global_mod.py
       title: expansion/polynomial/berlekamp_massey_global_mod.py
@@ -204,42 +207,42 @@ data:
     pages:
     - icon: ''
       path: expansion/string/AhoCorasick.py
-      title: expansion/string/AhoCorasick.py
+      title: AhoCorasick
     - icon: ''
       path: expansion/string/KMP.py
-      title: expansion/string/KMP.py
+      title: KMP
     - icon: ''
       path: expansion/string/RollingHash.py
-      title: expansion/string/RollingHash.py
+      title: RollingHash
     - icon: ''
       path: expansion/string/Z_algorithm.py
-      title: expansion/string/Z_algorithm.py
+      title: Z_algorithm
     - icon: ''
       path: expansion/string/manacher.py
-      title: expansion/string/manacher.py
+      title: manacher
     - icon: ''
       path: expansion/string/suffix_array.py
-      title: expansion/string/suffix_array.py
+      title: suffix_array, LCP
     - icon: ''
-      path: expansion/string/wildcard_mathing.py
-      title: expansion/string/wildcard_mathing.py
+      path: expansion/string/wildcard_matching.py
+      title: wildcard_matching
   - name: expansion/tree
     pages:
     - icon: ''
       path: expansion/tree/CartesianTree.py
-      title: expansion/tree/CartesianTree.py
+      title: CartesianTree
     - icon: ''
       path: expansion/tree/CentroidDecomposition.py
-      title: expansion/tree/CentroidDecomposition.py
+      title: CentroidDecomposition
     - icon: ''
       path: expansion/tree/HLD.py
-      title: expansion/tree/HLD.py
+      title: HLD
     - icon: ''
       path: expansion/tree/Kruskal.py
-      title: expansion/tree/Kruskal.py
+      title: Kruskal
     - icon: ''
       path: expansion/tree/LCA.py
-      title: expansion/tree/LCA.py
+      title: LCA
   - name: .
     pages:
     - icon: ''
@@ -468,8 +471,8 @@ data:
       path: src/string/suffix_array.py
       title: src/string/suffix_array.py
     - icon: ''
-      path: src/string/wildcard_mathing.py
-      title: src/string/wildcard_mathing.py
+      path: src/string/wildcard_matching.py
+      title: src/string/wildcard_matching.py
   - name: src/tree
     pages:
     - icon: ''
@@ -646,8 +649,8 @@ data:
       path: expansion/$tests/math/mat_pow.test.py
       title: expansion/$tests/math/mat_pow.test.py
     - icon: ''
-      path: expansion/$tests/math/mat_pow_gloabal_mod.test.py
-      title: expansion/$tests/math/mat_pow_gloabal_mod.test.py
+      path: expansion/$tests/math/mat_pow_global_mod.test.py
+      title: expansion/$tests/math/mat_pow_global_mod.test.py
   - name: expansion/$tests/misc
     pages:
     - icon: ''
@@ -715,8 +718,8 @@ data:
       path: expansion/$tests/string/suffix_array.test.py
       title: expansion/$tests/string/suffix_array.test.py
     - icon: ''
-      path: expansion/$tests/string/wildcard_mathing.test.py
-      title: expansion/$tests/string/wildcard_mathing.test.py
+      path: expansion/$tests/string/wildcard_matching.test.py
+      title: expansion/$tests/string/wildcard_matching.test.py
   - name: expansion/$tests/tree
     pages:
     - icon: ''
@@ -732,8 +735,8 @@ data:
       path: expansion/$tests/tree/HLD_lca.test.py
       title: expansion/$tests/tree/HLD_lca.test.py
     - icon: ''
-      path: expansion/$tests/tree/JumoOnTree.test.py
-      title: expansion/$tests/tree/JumoOnTree.test.py
+      path: expansion/$tests/tree/JumpOnTree.test.py
+      title: expansion/$tests/tree/JumpOnTree.test.py
     - icon: ''
       path: expansion/$tests/tree/Kruskal.test.py
       title: expansion/$tests/tree/Kruskal.test.py
@@ -898,8 +901,8 @@ data:
       path: src/$tests/math/mat_pow.test.py
       title: src/$tests/math/mat_pow.test.py
     - icon: ''
-      path: src/$tests/math/mat_pow_gloabal_mod.test.py
-      title: src/$tests/math/mat_pow_gloabal_mod.test.py
+      path: src/$tests/math/mat_pow_global_mod.test.py
+      title: src/$tests/math/mat_pow_global_mod.test.py
   - name: src/$tests/misc
     pages:
     - icon: ''
@@ -967,8 +970,8 @@ data:
       path: src/$tests/string/suffix_array.test.py
       title: src/$tests/string/suffix_array.test.py
     - icon: ''
-      path: src/$tests/string/wildcard_mathing.test.py
-      title: src/$tests/string/wildcard_mathing.test.py
+      path: src/$tests/string/wildcard_matching.test.py
+      title: src/$tests/string/wildcard_matching.test.py
   - name: src/$tests/tree
     pages:
     - icon: ''
@@ -984,8 +987,8 @@ data:
       path: src/$tests/tree/HLD_lca.test.py
       title: src/$tests/tree/HLD_lca.test.py
     - icon: ''
-      path: src/$tests/tree/JumoOnTree.test.py
-      title: src/$tests/tree/JumoOnTree.test.py
+      path: src/$tests/tree/JumpOnTree.test.py
+      title: src/$tests/tree/JumpOnTree.test.py
     - icon: ''
       path: src/$tests/tree/Kruskal.test.py
       title: src/$tests/tree/Kruskal.test.py

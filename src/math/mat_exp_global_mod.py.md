@@ -4,8 +4,8 @@ data:
   _extendedRequiredBy: []
   _extendedVerifiedWith:
   - icon: ''
-    path: src/$tests/math/mat_pow_gloabal_mod.test.py
-    title: src/$tests/math/mat_pow_gloabal_mod.test.py
+    path: src/$tests/math/mat_pow_global_mod.test.py
+    title: src/$tests/math/mat_pow_global_mod.test.py
   _isVerificationFailed: true
   _pathExtension: py
   attributes:
@@ -29,7 +29,7 @@ data:
   timestamp: '2023-07-16 19:41:28+09:00'
   verificationStatus: LIBRARY_ALL_WA
   verifiedWith:
-  - src/$tests/math/mat_pow_gloabal_mod.test.py
+  - src/$tests/math/mat_pow_global_mod.test.py
 documentation_of: src/math/mat_exp_global_mod.py
 layout: document
 redirect_from:

@@ -69,5 +69,5 @@ title: SegmentTree
 - \_\_getitem\_\_(i) := `get(i)` と同じ
 - \_\_setitem\_\_(i) := `set(i, x)` と同じ
 - prod(l, r) := 区間 $[l, r)$ の演算結果を返します．
-- max_right(self, l, f) := 関数 f を与えて segtree 上で二分探索をします．ac-library にあるものと同じ仕様です．
-- max_left(self, r, f) := 関数 f を与えて segtree 上で二分探索をします．ac-library にあるものと同じ仕様です．
+- max_right(self, l, f) := 関数 f を与えて segtree 上で二分探索をします．[ac-library](https://atcoder.github.io/ac-library/master/document_ja/segtree.html) にあるものと同じ仕様です．
+- max_left(self, r, f) := 関数 f を与えて segtree 上で二分探索をします．[ac-library](https://atcoder.github.io/ac-library/master/document_ja/segtree.html) にあるものと同じ仕様です．

@@ -7,8 +7,8 @@ data:
   _extendedRequiredBy: []
   _extendedVerifiedWith:
   - icon: ''
-    path: src/$tests/string/wildcard_mathing.test.py
-    title: src/$tests/string/wildcard_mathing.test.py
+    path: src/$tests/string/wildcard_matching.test.py
+    title: src/$tests/string/wildcard_matching.test.py
   _isVerificationFailed: true
   _pathExtension: py
   attributes:
@@ -35,16 +35,16 @@ data:
   dependsOn:
   - src/convolution/NTT998.py
   isVerificationFile: false
-  path: src/string/wildcard_mathing.py
+  path: src/string/wildcard_matching.py
   requiredBy: []
-  timestamp: '2023-07-17 18:11:17+09:00'
+  timestamp: '2023-07-29 13:32:11+09:00'
   verificationStatus: LIBRARY_ALL_WA
   verifiedWith:
-  - src/$tests/string/wildcard_mathing.test.py
-documentation_of: src/string/wildcard_mathing.py
+  - src/$tests/string/wildcard_matching.test.py
+documentation_of: src/string/wildcard_matching.py
 layout: document
 redirect_from:
-- /library/src/string/wildcard_mathing.py
-- /library/src/string/wildcard_mathing.py.html
-title: src/string/wildcard_mathing.py
+- /library/src/string/wildcard_matching.py
+- /library/src/string/wildcard_matching.py.html
+title: src/string/wildcard_matching.py
 ---

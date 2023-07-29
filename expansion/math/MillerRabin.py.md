@@ -29,8 +29,13 @@ data:
   verifiedWith: []
 documentation_of: expansion/math/MillerRabin.py
 layout: document
-redirect_from:
-- /library/expansion/math/MillerRabin.py
-- /library/expansion/math/MillerRabin.py.html
-title: expansion/math/MillerRabin.py
+title: MillerRabin
 ---
+
+# 概要
+1 つの整数に対して素数判定をします．
+
+## 使い方
+```
+isprime = MillerRabin(n)
+```

@@ -49,8 +49,14 @@ data:
   verifiedWith: []
 documentation_of: expansion/math/PollardRho.py
 layout: document
-redirect_from:
-- /library/expansion/math/PollardRho.py
-- /library/expansion/math/PollardRho.py.html
-title: expansion/math/PollardRho.py
+title: PollardRho
 ---
+
+# 概要
+素因数分解をします
+
+## 使い方
+```python
+primes = primefact(n) // 素因数分解の結果を list で返す
+primes = primedict(n) // 素因数分解の結果を dist で返す
+```

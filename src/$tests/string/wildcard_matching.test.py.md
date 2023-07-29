@@ -5,8 +5,8 @@ data:
     path: src/string/RollingHash.py
     title: src/string/RollingHash.py
   - icon: ''
-    path: src/string/wildcard_mathing.py
-    title: src/string/wildcard_mathing.py
+    path: src/string/wildcard_matching.py
+    title: src/string/wildcard_matching.py
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: true
@@ -21,7 +21,7 @@ data:
     , line 108, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
   code: "# verification-helper: PROBLEM https://yukicoder.me/problems/no/2231\nfrom\
     \ pathlib import Path\nimport sys\n\nsys.path.append(str(Path(__file__).resolve().parent.parent.parent.parent))\n\
-    \nfrom src.string.RollingHash import RollingHash\nfrom src.string.wildcard_mathing\
+    \nfrom src.string.RollingHash import RollingHash\nfrom src.string.wildcard_matching\
     \ import wildcard_matching\n\n\ndef solve():\n    n, m = map(int, input().split())\n\
     \    S = list(input())\n    T = list(input())\n    res = wildcard_matching(S,\
     \ T)\n    if not res:\n        print(-1)\n        return\n\n    for i in range(n):\n\
@@ -39,18 +39,18 @@ data:
     \     ind = res[i]\n\n    for i in range(m):\n        S[i + ind] = T[i]\n    print(*S,\
     \ sep=\"\")\n\n\nfor _ in range(int(input())):\n    solve()\n"
   dependsOn:
-  - src/string/wildcard_mathing.py
   - src/string/RollingHash.py
+  - src/string/wildcard_matching.py
   isVerificationFile: true
-  path: src/$tests/string/wildcard_mathing.test.py
+  path: src/$tests/string/wildcard_matching.test.py
   requiredBy: []
-  timestamp: '2023-07-23 08:45:17+09:00'
+  timestamp: '2023-07-29 13:32:11+09:00'
   verificationStatus: TEST_WRONG_ANSWER
   verifiedWith: []
-documentation_of: src/$tests/string/wildcard_mathing.test.py
+documentation_of: src/$tests/string/wildcard_matching.test.py
 layout: document
 redirect_from:
-- /verify/src/$tests/string/wildcard_mathing.test.py
-- /verify/src/$tests/string/wildcard_mathing.test.py.html
-title: src/$tests/string/wildcard_mathing.test.py
+- /verify/src/$tests/string/wildcard_matching.test.py
+- /verify/src/$tests/string/wildcard_matching.test.py.html
+title: src/$tests/string/wildcard_matching.test.py
 ---

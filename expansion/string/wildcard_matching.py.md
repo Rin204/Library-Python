@@ -97,15 +97,24 @@ data:
     \n    return res\n"
   dependsOn: []
   isVerificationFile: false
-  path: expansion/string/wildcard_mathing.py
+  path: expansion/string/wildcard_matching.py
   requiredBy: []
-  timestamp: '2023-07-17 18:11:17+09:00'
+  timestamp: '2023-07-29 13:32:11+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
-documentation_of: expansion/string/wildcard_mathing.py
+documentation_of: expansion/string/wildcard_matching.py
 layout: document
-redirect_from:
-- /library/expansion/string/wildcard_mathing.py
-- /library/expansion/string/wildcard_mathing.py.html
-title: expansion/string/wildcard_mathing.py
+title: wildcard_matching
 ---
+
+# 概要
+文字列のワイルドカード付マッチングです．
+
+MOD 998 の畳み込みを用いているので，非常に低い確率で落ちます．
+
+## 使い方
+
+```python
+res = wildcard_matching(S, T, wild="?")
+```
+res[i] = True のとき，$S[i:i+|T|] = T$ です．

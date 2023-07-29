@@ -26,8 +26,14 @@ data:
   verifiedWith: []
 documentation_of: expansion/string/Z_algorithm.py
 layout: document
-redirect_from:
-- /library/expansion/string/Z_algorithm.py
-- /library/expansion/string/Z_algorithm.py.html
-title: expansion/string/Z_algorithm.py
+title: Z_algorithm
 ---
+
+# 概要
+Z_algorithm です．
+
+## 使い方
+
+```python
+res = Z_algorithm(S)
+```

@@ -31,8 +31,14 @@ data:
   verifiedWith: []
 documentation_of: expansion/string/KMP.py
 layout: document
-redirect_from:
-- /library/expansion/string/KMP.py
-- /library/expansion/string/KMP.py.html
-title: expansion/string/KMP.py
+title: KMP
 ---
+
+# 概要
+KMP です．
+
+## 使い方
+
+```python
+res = kmp_search(text, word)
+```

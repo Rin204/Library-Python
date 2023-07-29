@@ -27,15 +27,15 @@ data:
     \    A[s][t] = 1\n    A[t][s] = 1\n\nB = mat_exp_global_mod(A, B, T)\nprint(B[0])\n"
   dependsOn: []
   isVerificationFile: true
-  path: expansion/$tests/math/mat_pow_gloabal_mod.test.py
+  path: expansion/$tests/math/mat_pow_global_mod.test.py
   requiredBy: []
-  timestamp: '2023-07-23 08:45:17+09:00'
+  timestamp: '2023-07-29 13:32:11+09:00'
   verificationStatus: TEST_WRONG_ANSWER
   verifiedWith: []
-documentation_of: expansion/$tests/math/mat_pow_gloabal_mod.test.py
+documentation_of: expansion/$tests/math/mat_pow_global_mod.test.py
 layout: document
 redirect_from:
-- /verify/expansion/$tests/math/mat_pow_gloabal_mod.test.py
-- /verify/expansion/$tests/math/mat_pow_gloabal_mod.test.py.html
-title: expansion/$tests/math/mat_pow_gloabal_mod.test.py
+- /verify/expansion/$tests/math/mat_pow_global_mod.test.py
+- /verify/expansion/$tests/math/mat_pow_global_mod.test.py.html
+title: expansion/$tests/math/mat_pow_global_mod.test.py
 ---

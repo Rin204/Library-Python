@@ -27,8 +27,13 @@ data:
   verifiedWith: []
 documentation_of: expansion/math/floor_sum.py
 layout: document
-redirect_from:
-- /library/expansion/math/floor_sum.py
-- /library/expansion/math/floor_sum.py.html
-title: expansion/math/floor_sum.py
+title: floor_sum
 ---
+
+# 概要
+$\sum_{i=0}^{n-1} ((a*i+b)//m)$ を求めます
+
+## 使い方
+```python
+res = floor_sum(n, m, a, b)
+```

@@ -7,8 +7,8 @@ data:
     path: src/$tests/string/RollingHash.test.py
     title: src/$tests/string/RollingHash.test.py
   - icon: ''
-    path: src/$tests/string/wildcard_mathing.test.py
-    title: src/$tests/string/wildcard_mathing.test.py
+    path: src/$tests/string/wildcard_matching.test.py
+    title: src/$tests/string/wildcard_matching.test.py
   _isVerificationFailed: true
   _pathExtension: py
   attributes:
@@ -43,7 +43,7 @@ data:
   timestamp: '2023-06-12 00:17:20+09:00'
   verificationStatus: LIBRARY_ALL_WA
   verifiedWith:
-  - src/$tests/string/wildcard_mathing.test.py
+  - src/$tests/string/wildcard_matching.test.py
   - src/$tests/string/RollingHash.test.py
 documentation_of: src/string/RollingHash.py
 layout: document

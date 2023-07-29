@@ -24,15 +24,15 @@ data:
   dependsOn:
   - src/tree/LCA.py
   isVerificationFile: true
-  path: src/$tests/tree/JumoOnTree.test.py
+  path: src/$tests/tree/JumpOnTree.test.py
   requiredBy: []
-  timestamp: '2023-07-23 08:45:17+09:00'
+  timestamp: '2023-07-29 13:32:11+09:00'
   verificationStatus: TEST_WRONG_ANSWER
   verifiedWith: []
-documentation_of: src/$tests/tree/JumoOnTree.test.py
+documentation_of: src/$tests/tree/JumpOnTree.test.py
 layout: document
 redirect_from:
-- /verify/src/$tests/tree/JumoOnTree.test.py
-- /verify/src/$tests/tree/JumoOnTree.test.py.html
-title: src/$tests/tree/JumoOnTree.test.py
+- /verify/src/$tests/tree/JumpOnTree.test.py
+- /verify/src/$tests/tree/JumpOnTree.test.py.html
+title: src/$tests/tree/JumpOnTree.test.py
 ---

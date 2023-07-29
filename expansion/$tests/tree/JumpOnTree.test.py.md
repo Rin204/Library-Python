@@ -52,15 +52,15 @@ data:
     \ v, k))\n"
   dependsOn: []
   isVerificationFile: true
-  path: expansion/$tests/tree/JumoOnTree.test.py
+  path: expansion/$tests/tree/JumpOnTree.test.py
   requiredBy: []
-  timestamp: '2023-07-23 08:45:17+09:00'
+  timestamp: '2023-07-29 13:32:11+09:00'
   verificationStatus: TEST_WRONG_ANSWER
   verifiedWith: []
-documentation_of: expansion/$tests/tree/JumoOnTree.test.py
+documentation_of: expansion/$tests/tree/JumpOnTree.test.py
 layout: document
 redirect_from:
-- /verify/expansion/$tests/tree/JumoOnTree.test.py
-- /verify/expansion/$tests/tree/JumoOnTree.test.py.html
-title: expansion/$tests/tree/JumoOnTree.test.py
+- /verify/expansion/$tests/tree/JumpOnTree.test.py
+- /verify/expansion/$tests/tree/JumpOnTree.test.py.html
+title: expansion/$tests/tree/JumpOnTree.test.py
 ---

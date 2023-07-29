@@ -4,8 +4,8 @@ data:
   _extendedRequiredBy: []
   _extendedVerifiedWith:
   - icon: ''
-    path: src/$tests/tree/JumoOnTree.test.py
-    title: src/$tests/tree/JumoOnTree.test.py
+    path: src/$tests/tree/JumpOnTree.test.py
+    title: src/$tests/tree/JumpOnTree.test.py
   - icon: ''
     path: src/$tests/tree/LCA.test.py
     title: src/$tests/tree/LCA.test.py
@@ -58,7 +58,7 @@ data:
   verificationStatus: LIBRARY_ALL_WA
   verifiedWith:
   - src/$tests/tree/LCA.test.py
-  - src/$tests/tree/JumoOnTree.test.py
+  - src/$tests/tree/JumpOnTree.test.py
 documentation_of: src/tree/LCA.py
 layout: document
 redirect_from:

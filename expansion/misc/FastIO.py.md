@@ -42,8 +42,10 @@ data:
   verifiedWith: []
 documentation_of: expansion/misc/FastIO.py
 layout: document
-redirect_from:
-- /library/expansion/misc/FastIO.py
-- /library/expansion/misc/FastIO.py.html
-title: expansion/misc/FastIO.py
+title: FastIO
 ---
+
+# 概要
+https://github.com/Tsuzat/fast-IO-for-python です．
+
+~~なんかめちゃくちゃ早かった記憶があったんですが，最近調べたら sys.stdin.readline とほとんど変わらなかったです~~

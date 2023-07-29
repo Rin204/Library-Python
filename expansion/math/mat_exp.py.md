@@ -29,8 +29,15 @@ data:
   verifiedWith: []
 documentation_of: expansion/math/mat_exp.py
 layout: document
-redirect_from:
-- /library/expansion/math/mat_exp.py
-- /library/expansion/math/mat_exp.py.html
-title: expansion/math/mat_exp.py
+title: "\u884C\u5217\u7D2F\u4E57"
 ---
+
+# 概要
+$n * n$ 行列 $A$，$n * 1$ 行列 $B$ が与えられたときに
+$A^k B$ を求めます
+ただし，B は 2 次元リストではなく， 1 次元リストで与えてください，($B'_i = B_{i, 0}$)
+
+## 使い方
+```python
+C = mat_exp(A, B, MOD)
+```

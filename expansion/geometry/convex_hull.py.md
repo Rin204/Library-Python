@@ -29,8 +29,16 @@ data:
   verifiedWith: []
 documentation_of: expansion/geometry/convex_hull.py
 layout: document
-redirect_from:
-- /library/expansion/geometry/convex_hull.py
-- /library/expansion/geometry/convex_hull.py.html
-title: expansion/geometry/convex_hull.py
+title: "\u51F8\u5305"
 ---
+
+# 概要
+凸包を求めます．
+$[(x_1, y_1), (x_2, y_2), \ldots]$
+の形式で頂点を与えてください．
+
+## 使い方
+
+```
+convex_hull_points = convex_hull(points)
+```

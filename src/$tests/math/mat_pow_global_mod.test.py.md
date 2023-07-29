@@ -25,15 +25,15 @@ data:
   dependsOn:
   - src/math/mat_exp_global_mod.py
   isVerificationFile: true
-  path: src/$tests/math/mat_pow_gloabal_mod.test.py
+  path: src/$tests/math/mat_pow_global_mod.test.py
   requiredBy: []
-  timestamp: '2023-07-23 08:45:17+09:00'
+  timestamp: '2023-07-29 13:32:11+09:00'
   verificationStatus: TEST_WRONG_ANSWER
   verifiedWith: []
-documentation_of: src/$tests/math/mat_pow_gloabal_mod.test.py
+documentation_of: src/$tests/math/mat_pow_global_mod.test.py
 layout: document
 redirect_from:
-- /verify/src/$tests/math/mat_pow_gloabal_mod.test.py
-- /verify/src/$tests/math/mat_pow_gloabal_mod.test.py.html
-title: src/$tests/math/mat_pow_gloabal_mod.test.py
+- /verify/src/$tests/math/mat_pow_global_mod.test.py
+- /verify/src/$tests/math/mat_pow_global_mod.test.py.html
+title: src/$tests/math/mat_pow_global_mod.test.py
 ---
