@@ -1,6 +1,6 @@
 ---
 title: SCC
-documentation_of: ././expansion/geometry/SCC.py
+documentation_of: ././expansion/graph/SCC.py
 ---
 
 # 概要

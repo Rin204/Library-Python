@@ -1,6 +1,6 @@
 ---
 title: bellmanFord
-documentation_of: ././expansion/geometry/bellmanFord.py
+documentation_of: ././expansion/graph/bellmanFord.py
 ---
 
 # 概要

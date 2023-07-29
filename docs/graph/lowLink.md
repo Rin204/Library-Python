@@ -1,6 +1,6 @@
 ---
 title: lowLink
-documentation_of: ././expansion/geometry/lowLink.py
+documentation_of: ././expansion/graph/lowLink.py
 ---
 
 # 概要

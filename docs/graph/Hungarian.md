@@ -1,6 +1,6 @@
 ---
 title: Hungarian
-documentation_of: ././expansion/geometry/Hungarian.py
+documentation_of: ././expansion/graph/Hungarian.py
 ---
 
 # 概要

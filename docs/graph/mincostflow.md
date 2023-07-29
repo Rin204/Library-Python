@@ -1,6 +1,6 @@
 ---
 title: maxflow
-documentation_of: ././expansion/geometry/maxflow.py
+documentation_of: ././expansion/graph/maxflow.py
 ---
 
 # 概要

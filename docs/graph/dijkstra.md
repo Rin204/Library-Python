@@ -1,6 +1,6 @@
 ---
 title: dijkstra
-documentation_of: ././expansion/geometry/dijkstra.py
+documentation_of: ././expansion/graph/dijkstra.py
 ---
 
 # 概要
