@@ -5,7 +5,7 @@ import sys
 sys.path.append(str(Path(__file__).resolve().parent.parent.parent.parent))
 
 from src.string.RollingHash import RollingHash
-from src.string.wildcard_mathing import wildcard_matching
+from src.string.wildcard_matching import wildcard_matching
 
 
 def solve():
