@@ -7,19 +7,19 @@ sys.path.append(str(Path(__file__).resolve().parent.parent.parent.parent))
 
 class LazySegmentTreeBase_:
     def ope(self, l, r):
-        return None
+        raise NotImplementedError
 
     def e(self):
-        return None
+        raise NotImplementedError
 
     def mapping(self, f, x):
-        return None
+        raise NotImplementedError
 
     def composition(self, f, g):
-        return None
+        raise NotImplementedError
 
     def id_(self):
-        return None
+        raise NotImplementedError
 
     def __init__(self, n, init=None):
         self.n = n

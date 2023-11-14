@@ -10,10 +10,10 @@ from random import randrange
 
 class SegmentTreeBase_:
     def ope(self, l, r):
-        return None
+        raise NotImplementedError
 
     def e(self):
-        return None
+        raise NotImplementedError
 
     def __init__(self, n, init=None):
         self.n = n
