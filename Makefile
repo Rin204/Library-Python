@@ -10,12 +10,6 @@ ruff:
 
 oj: verify docs
 
-verify-src:
-	oj-verify run src/_tests/*/*.test.py
-
-verify-exp:
-	oj-verify run expansion/_tests/*/*.test.py
-
 verify:
 	oj-verify run
 

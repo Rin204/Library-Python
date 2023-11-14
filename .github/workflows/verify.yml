@@ -16,18 +16,18 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v1
       with:
-          python-version: 3.11.4
+          python-version: 3.11
 
     - name: Install dependencies
       run: pip3 install -U online-judge-verify-helper
 
     - name: Copy dependencies
       run: |
-        rm -rf /opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify
-        cp -r ./.github/oj-verify /opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify
+        rm -rf /opt/hostedtoolcache/Python/3.11/x64/lib/python3.11/site-packages/onlinejudge_verify
+        cp -r ./.github/oj-verify /opt/hostedtoolcache/Python/3.11/x64/lib/python3.11/site-packages/onlinejudge_verify
         sleep 5
 
-    - name: run verify
+    - name: create docs
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         YUKICODER_TOKEN: ${{ secrets.YUKICODER_TOKEN }}
