@@ -1,18 +1,18 @@
 class MoBase_:
     def add_left(self, i):
-        pass
+        raise NotImplementedError
 
     def add_right(self, i):
-        pass
+        raise NotImplementedError
 
     def delete_left(self, i):
-        pass
+        raise NotImplementedError
 
     def delete_right(self, i):
-        pass
+        raise NotImplementedError
 
     def rem(self, i):
-        pass
+        raise NotImplementedError
 
     def __init__(self, n, Q):
         self.n = n

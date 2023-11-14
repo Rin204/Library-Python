@@ -7,7 +7,7 @@ sys.path.append(str(Path(__file__).resolve().parent.parent.parent.parent))
 
 class DisjointSparseTableBase_:
     def ope(self, l, r):
-        pass
+        raise NotImplementedError
 
     def __init__(self, A):
         self.n = len(A)

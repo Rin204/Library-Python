@@ -1,9 +1,9 @@
 class SWAGBase_:
     def ope(self, l, r):
-        pass
+        raise NotImplementedError
 
     def e(self):
-        pass
+        raise NotImplementedError
 
     def __init__(self):
         self.L = []
