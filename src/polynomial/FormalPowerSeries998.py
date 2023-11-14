@@ -8,7 +8,7 @@ class FormalPowerSeries998(list):
     Comb = Combination(200000)
 
     def __init__(self, n):
-        if type(n) == int:
+        if isinstance(n, int):
             super().__init__([0] * n)
         else:
             super().__init__(n)
@@ -68,7 +68,7 @@ class FormalPowerSeries998(list):
         return self
 
     def __mul__(self, other):
-        if type(other) == int:
+        if isinstance(other, int):
             return FormalPowerSeries998([x * other % 998244353 for x in self])
         return FormalPowerSeries998(NTT998.multiply(list(self), list(other)))
 
