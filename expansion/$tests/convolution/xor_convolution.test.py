@@ -26,6 +26,9 @@ def xor_convolution(A, B, MOD=-1):
                     if MOD != -1:
                         A[j] = (x + y) % MOD
                         A[j + h] = (x - y) % MOD
+                    else:
+                        A[j] = x + y
+                        A[j + h] = x - y
             h *= 2
 
     f(A)
