@@ -1,33 +1,33 @@
 import heapq
 
-# from dataclasses import dataclass
+from dataclasses import dataclass
 
 
 class mcf_graph:
-    # @dataclass
+    @dataclass
     class edge:
-        # from_: int
-        # to: int
-        # cap: int
-        # flow: int
-        def __init__(self, from_, to, cap, flow, cost):
-            self.from_ = from_
-            self.to = to
-            self.cap = cap
-            self.flow = flow
-            self.cost = cost
+        from_: int
+        to: int
+        cap: int
+        flow: int
+        # def __init__(self, from_, to, cap, flow, cost):
+        #     self.from_ = from_
+        #     self.to = to
+        #     self.cap = cap
+        #     self.flow = flow
+        #     self.cost = cost
 
-    # @dataclass
+    @dataclass
     class _edge:
-        # to: int
-        # rev: int
-        # cap: int
-        # cost: int
-        def __init__(self, to, rev, cap, cost):
-            self.to = to
-            self.rev = rev
-            self.cap = cap
-            self.cost = cost
+        to: int
+        rev: int
+        cap: int
+        cost: int
+        # def __init__(self, to, rev, cap, cost):
+        #     self.to = to
+        #     self.rev = rev
+        #     self.cap = cap
+        #     self.cost = cost
 
     def __init__(self, n, inf=1 << 60):
         self.n = n

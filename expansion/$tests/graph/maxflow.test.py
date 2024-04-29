@@ -4,32 +4,35 @@ import sys
 
 sys.path.append(str(Path(__file__).resolve().parent.parent.parent.parent))
 from collections import deque
+import sys
 
-# from dataclasses import dataclass
+from dataclasses import dataclass
+
+sys.setrecursionlimit(10**7)
 
 
 class mf_graph:
-    # @dataclass
+    @dataclass
     class edge:
-        # from_: int
-        # to: int
-        # cap: int
-        # flow: int
-        def __init__(self, from_, to, cap, flow):
-            self.from_ = from_
-            self.to = to
-            self.cap = cap
-            self.flow = flow
+        from_: int
+        to: int
+        cap: int
+        flow: int
+        # def __init__(self, from_, to, cap, flow):
+        #     self.from_ = from_
+        #     self.to = to
+        #     self.cap = cap
+        #     self.flow = flow
 
-    # @dataclass
+    @dataclass
     class _edge:
-        # to: int
-        # rev: int
-        # cap: int
-        def __init__(self, to, rev, cap):
-            self.to = to
-            self.rev = rev
-            self.cap = cap
+        to: int
+        rev: int
+        cap: int
+        # def __init__(self, to, rev, cap):
+        #     self.to = to
+        #     self.rev = rev
+        #     self.cap = cap
 
     def __init__(self, n):
         self.n = n
