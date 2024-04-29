@@ -15,6 +15,7 @@ class mcf_graph:
         to: int
         cap: int
         flow: int
+        cost: int
         # def __init__(self, from_, to, cap, flow, cost):
         #     self.from_ = from_
         #     self.to = to
